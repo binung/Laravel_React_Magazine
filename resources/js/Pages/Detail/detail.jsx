@@ -1,12 +1,15 @@
 import { Link } from "@inertiajs/react";
+import { useSelector } from "react-redux";
 
 import Navigation from "../Component/navigation";
 import Footer from "../Component/footer";
 
-export default function Detail({ filteredPosts }) {
+export default function Detail({ post }) {
+    const jsonData = useSelector((state) => state.jsonData.jsonData);
+
     return (
         <>
-            <Navigation filteredPosts={{ filteredPosts }} />
+            <Navigation jsonData={jsonData} />
 
             <div
                 className="site-cover site-cover-sm same-height overlay single-page"
@@ -19,10 +22,8 @@ export default function Detail({ filteredPosts }) {
                                 <h1 className="mb-4">
                                     {/* Don’t assume your user data in the cloud is
                                     safe */}
-                                    {filteredPosts ? (
-                                        <span>
-                                            {filteredPosts.posts[0].Description}
-                                        </span>
+                                    {post ? (
+                                        <span>{post.title}</span>
                                     ) : (
                                         <p>Loading data...</p>
                                     )}
@@ -36,9 +37,9 @@ export default function Detail({ filteredPosts }) {
                                         />
                                     </figure>
                                     <span className="d-inline-block mt-1">
-                                        By Carl Atkinson
+                                        {post.by}
                                     </span>
-                                    <span>&nbsp;-&nbsp; February 10, 2019</span>
+                                    <span>&nbsp;-&nbsp; {post.DateTime}</span>
                                 </div>
                             </div>
                         </div>
@@ -51,12 +52,13 @@ export default function Detail({ filteredPosts }) {
                     <div className="row blog-entries element-animate">
                         <div className="col-md-12 col-lg-8 main-content">
                             <div className="post-content-body">
-                                {filteredPosts ? (
+                                {post ? (
                                     <span>
-                                        {
-                                            filteredPosts.categories[0]
-                                                .description
-                                        }
+                                        {jsonData.categories.map((item) => {
+                                            if (item.id == post.category_id) {
+                                                return item.description;
+                                            }
+                                        })}
                                     </span>
                                 ) : (
                                     <p>Loading data...</p>
@@ -84,9 +86,13 @@ export default function Detail({ filteredPosts }) {
                                         />
                                     </div>
                                 </div>
-                                {filteredPosts ? (
+                                {post ? (
                                     <span>
-                                        {filteredPosts.posts[0].description}
+                                        {jsonData.categories.map((item) => {
+                                            if (item.id == post.category_id) {
+                                                return post.description;
+                                            }
+                                        })}
                                     </span>
                                 ) : (
                                     <p>Loading data...</p>
@@ -96,16 +102,14 @@ export default function Detail({ filteredPosts }) {
                             <div className="pt-5">
                                 <p>
                                     Categories:
-                                    {filteredPosts ? (
-                                        filteredPosts.categories[0].keyword.map(
-                                            (item) => {
-                                                return (
-                                                    <Link href="#">
-                                                        &nbsp;&nbsp;{item}
-                                                    </Link>
-                                                );
-                                            }
-                                        )
+                                    {post ? (
+                                        post.keyword.map((item) => {
+                                            return (
+                                                <Link href="#">
+                                                    &nbsp;&nbsp;{item}
+                                                </Link>
+                                            );
+                                        })
                                     ) : (
                                         <p>no exist</p>
                                     )}
@@ -595,7 +599,7 @@ export default function Detail({ filteredPosts }) {
                 </div>
             </section>
 
-            <section className="section posts-entry posts-entry-sm bg-light">
+            <section className="section post-entry post-entry-sm bg-light">
                 <div className="container">
                     <div className="row mb-4">
                         <div className="col-12 text-uppercase text-black">

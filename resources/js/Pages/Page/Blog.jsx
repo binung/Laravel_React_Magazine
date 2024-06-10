@@ -4,20 +4,29 @@ import { useSelector } from "react-redux";
 import Navigation from "../Component/navigation";
 import Footer from "../Component/footer";
 
-export default function Category({ posts }) {
+export default function Blog() {
     const jsonData = useSelector((state) => state.jsonData.jsonData);
 
     return (
         <>
             <Navigation jsonData={jsonData} />
+            <div className="hero overlay inner-page bg-primary py-5">
+                <div className="container">
+                    <div className="row align-items-center justify-content-center text-center pt-5">
+                        <div className="col-lg-6">
+                            <h1
+                                className="heading text-white mb-3"
+                                data-aos="fade-up"
+                            >
+                                Blog
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div className="section search-result-wrap">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <div className="heading">Category: Business</div>
-                        </div>
-                    </div>
                     <div className="row posts-entry">
                         <div className="col-lg-8">
                             <div className="blog-entry d-flex blog-entry-search-item">
@@ -239,7 +248,6 @@ export default function Category({ posts }) {
                                     />
                                 </form>
                             </div>
-
                             <div className="sidebar-box">
                                 <h3 className="heading">Popular Posts</h3>
                                 <div className="post-entry-sidebar">
@@ -254,7 +262,7 @@ export default function Category({ posts }) {
                                                 <div className="text">
                                                     <h4>
                                                         There’s Link Cool New
-                                                        Way for Men href Wear
+                                                        Way for Men to Wear
                                                         Socks and Sandals
                                                     </h4>
                                                     <div className="post-meta">
@@ -275,7 +283,7 @@ export default function Category({ posts }) {
                                                 <div className="text">
                                                     <h4>
                                                         There’s Link Cool New
-                                                        Way for Men href Wear
+                                                        Way for Men to Wear
                                                         Socks and Sandals
                                                     </h4>
                                                     <div className="post-meta">
@@ -296,7 +304,7 @@ export default function Category({ posts }) {
                                                 <div className="text">
                                                     <h4>
                                                         There’s Link Cool New
-                                                        Way for Men href Wear
+                                                        Way for Men to Wear
                                                         Socks and Sandals
                                                     </h4>
                                                     <div className="post-meta">
@@ -387,7 +395,6 @@ export default function Category({ posts }) {
                     </div>
                 </div>
             </div>
-
             <Footer />
         </>
     );

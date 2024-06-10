@@ -15,13 +15,29 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/category', function () {
-    return Inertia::render('Category/category');
-})->name('category');
+// Route::get('/category', function () {
+//     return Inertia::render('Category/category');
+// })->name('category');
 
-Route::get('/detail', function () {
-    return Inertia::render('Detail/detail');
-})->name('detail');
+// Route::get('/detail', function () {
+//     return Inertia::render('Detail/detail');
+// })->name('detail');
+
+Route::get('/search-result', function () {
+    return Inertia::render('Page/SearchResult');
+})->name('search-result');
+
+Route::get('/blog', function () {
+    return Inertia::render('Page/Blog');
+})->name('blog');
+
+Route::get('/about', function () {
+    return Inertia::render('Page/About');
+})->name('about');
+
+Route::get('/contact', function () {
+    return Inertia::render('Page/Contact');
+})->name('contact');
 
 
 Route::get('/posts/category/{category_id}', [PostController::class, 'getPostsByCategory'])->name('category.show');

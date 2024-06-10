@@ -4,18 +4,17 @@ import { useSelector } from "react-redux";
 import Navigation from "../Component/navigation";
 import Footer from "../Component/footer";
 
-export default function Category({ posts }) {
+export default function SearchResult() {
     const jsonData = useSelector((state) => state.jsonData.jsonData);
 
     return (
         <>
             <Navigation jsonData={jsonData} />
-
             <div className="section search-result-wrap">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <div className="heading">Category: Business</div>
+                            <div className="heading">Search: 'Thought'</div>
                         </div>
                     </div>
                     <div className="row posts-entry">
@@ -33,8 +32,7 @@ export default function Category({ posts }) {
                                 </Link>
                                 <div>
                                     <span className="date">
-                                        Apr. 14th, 2022 &bullet;{" "}
-                                        <Link href="#">Business</Link>
+                                        Apr. 14th, 2022
                                     </span>
                                     <h2>
                                         <Link href="single.html">
@@ -71,8 +69,7 @@ export default function Category({ posts }) {
                                 </Link>
                                 <div>
                                     <span className="date">
-                                        Apr. 14th, 2022 &bullet;{" "}
-                                        <Link href="#">Business</Link>
+                                        Apr. 14th, 2022
                                     </span>
                                     <h2>
                                         <Link href="single.html">
@@ -109,8 +106,7 @@ export default function Category({ posts }) {
                                 </Link>
                                 <div>
                                     <span className="date">
-                                        Apr. 14th, 2022 &bullet;{" "}
-                                        <Link href="#">Business</Link>
+                                        Apr. 14th, 2022
                                     </span>
                                     <h2>
                                         <Link href="single.html">
@@ -147,8 +143,7 @@ export default function Category({ posts }) {
                                 </Link>
                                 <div>
                                     <span className="date">
-                                        Apr. 14th, 2022 &bullet;{" "}
-                                        <Link href="#">Business</Link>
+                                        Apr. 14th, 2022
                                     </span>
                                     <h2>
                                         <Link href="single.html">
@@ -185,8 +180,7 @@ export default function Category({ posts }) {
                                 </Link>
                                 <div>
                                     <span className="date">
-                                        Apr. 14th, 2022 &bullet;{" "}
-                                        <Link href="#">Business</Link>
+                                        Apr. 14th, 2022
                                     </span>
                                     <h2>
                                         <Link href="single.html">
@@ -254,7 +248,7 @@ export default function Category({ posts }) {
                                                 <div className="text">
                                                     <h4>
                                                         There’s Link Cool New
-                                                        Way for Men href Wear
+                                                        Way for Men to Wear
                                                         Socks and Sandals
                                                     </h4>
                                                     <div className="post-meta">
@@ -275,7 +269,7 @@ export default function Category({ posts }) {
                                                 <div className="text">
                                                     <h4>
                                                         There’s Link Cool New
-                                                        Way for Men href Wear
+                                                        Way for Men to Wear
                                                         Socks and Sandals
                                                     </h4>
                                                     <div className="post-meta">
@@ -296,7 +290,7 @@ export default function Category({ posts }) {
                                                 <div className="text">
                                                     <h4>
                                                         There’s Link Cool New
-                                                        Way for Men href Wear
+                                                        Way for Men to Wear
                                                         Socks and Sandals
                                                     </h4>
                                                     <div className="post-meta">
@@ -387,7 +381,6 @@ export default function Category({ posts }) {
                     </div>
                 </div>
             </div>
-
             <Footer />
         </>
     );

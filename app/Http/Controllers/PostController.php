@@ -18,7 +18,7 @@ class PostController extends Controller
 
         // Return the filtered posts as a JSON response
         return Inertia::render('Category/category', [
-            'filteredPosts' => array_values($filteredPosts),
+            'posts' => array_values($filteredPosts),
         ]);
     }
 
@@ -27,13 +27,13 @@ class PostController extends Controller
         $posts = $this->getPost();
 
         // Filter posts by id
-        $filteredPosts = array_filter($posts, function ($post) use ($id) {
+        $filteredPosts = array_filter($posts['posts'], function ($post) use ($id) {
             return $post['id'] == $id;
         });
 
         // Return the filtered posts as a JSON response
         return Inertia::render('Detail/detail', [
-            'filteredPosts' => array_values($filteredPosts),
+            'title' => $filteredPosts,
         ]);
     }
 

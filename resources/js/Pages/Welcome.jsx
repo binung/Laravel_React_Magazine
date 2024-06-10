@@ -1,5 +1,5 @@
-import { Link, Head } from "@inertiajs/react";
-import React, { useState, useEffect } from "react";
+import { Link } from "@inertiajs/react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setJsonData } from "../features/jsonData/jsonDataSlice";
 
@@ -43,7 +43,7 @@ export default function Welcome() {
                     <div className="row align-items-stretch retro-layout">
                         <div className="col-md-4">
                             <Link
-                                href={route("detail")}
+                                href=""
                                 className="h-entry mb-30 v-height gradient"
                             >
                                 <div
@@ -64,10 +64,7 @@ export default function Welcome() {
                                     </h2>
                                 </div>
                             </Link>
-                            <Link
-                                href={route("detail")}
-                                className="h-entry v-height gradient"
-                            >
+                            <Link href="" className="h-entry v-height gradient">
                                 <div
                                     className="featured-img"
                                     style={{
@@ -89,7 +86,7 @@ export default function Welcome() {
                         </div>
                         <div className="col-md-4">
                             <Link
-                                href={route("detail")}
+                                href=""
                                 className="h-entry img-5 h-100 gradient"
                             >
                                 <div
@@ -110,7 +107,7 @@ export default function Welcome() {
                         </div>
                         <div className="col-md-4">
                             <Link
-                                href={route("detail")}
+                                href=""
                                 className="h-entry mb-30 v-height gradient"
                             >
                                 <div
@@ -131,10 +128,7 @@ export default function Welcome() {
                                     </h2>
                                 </div>
                             </Link>
-                            <Link
-                                href={route("detail")}
-                                className="h-entry v-height gradient"
-                            >
+                            <Link href="" className="h-entry v-height gradient">
                                 <div
                                     className="featured-img"
                                     style={{
@@ -175,10 +169,7 @@ export default function Welcome() {
                             <div className="row g-3">
                                 <div className="col-md-6">
                                     <div className="blog-entry">
-                                        <Link
-                                            href={route("detail")}
-                                            className="img-link"
-                                        >
+                                        <Link href="" className="img-link">
                                             <img
                                                 src="/images/img_1_sq.jpg"
                                                 alt="Image"
@@ -189,7 +180,7 @@ export default function Welcome() {
                                             Apr. 14th, 2022
                                         </span>
                                         <h2>
-                                            <Link href={route("detail")}>
+                                            <Link href="">
                                                 Thought you loved Python? Wait
                                                 until you meet Rust
                                             </Link>
@@ -202,7 +193,7 @@ export default function Welcome() {
                                         </p>
                                         <p>
                                             <Link
-                                                href={route("detail")}
+                                                href=""
                                                 className="btn btn-sm btn-outline-primary"
                                             >
                                                 Read More
@@ -212,10 +203,7 @@ export default function Welcome() {
                                 </div>
                                 <div className="col-md-6">
                                     <div className="blog-entry">
-                                        <Link
-                                            href={route("detail")}
-                                            className="img-link"
-                                        >
+                                        <Link href="" className="img-link">
                                             <img
                                                 src="/images/img_2_sq.jpg"
                                                 alt="Image"
@@ -226,7 +214,7 @@ export default function Welcome() {
                                             Apr. 14th, 2022
                                         </span>
                                         <h2>
-                                            <Link href={route("detail")}>
+                                            <Link href="">
                                                 Startup vs corporate: What job
                                                 suits you best?
                                             </Link>
@@ -239,7 +227,7 @@ export default function Welcome() {
                                         </p>
                                         <p>
                                             <Link
-                                                href={route("detail")}
+                                                href=""
                                                 className="btn btn-sm btn-outline-primary"
                                             >
                                                 Read More
@@ -256,7 +244,7 @@ export default function Welcome() {
                                         Apr. 14th, 2022
                                     </span>
                                     <h3>
-                                        <Link href={route("detail")}>
+                                        <Link href="">
                                             Don’t assume your user data in the
                                             cloud is safe
                                         </Link>
@@ -278,7 +266,7 @@ export default function Welcome() {
                                         Apr. 14th, 2022
                                     </span>
                                     <h3>
-                                        <Link href={route("detail")}>
+                                        <Link href="">
                                             Meta unveils fees on metaverse sales
                                         </Link>
                                     </h3>
@@ -299,7 +287,7 @@ export default function Welcome() {
                                         Apr. 14th, 2022
                                     </span>
                                     <h3>
-                                        <Link href={route("detail")}>
+                                        <Link href="">
                                             UK sees highest inflation in 30
                                             years
                                         </Link>
@@ -326,10 +314,7 @@ export default function Welcome() {
                     <div className="row">
                         <div className="col-md-6 col-lg-3">
                             <div className="blog-entry">
-                                <Link
-                                    href={route("detail")}
-                                    className="img-link"
-                                >
+                                <Link href="" className="img-link">
                                     <img
                                         src="/images/img_1_horizontal.jpg"
                                         alt="Image"
@@ -338,7 +323,7 @@ export default function Welcome() {
                                 </Link>
                                 <span className="date">Apr. 14th, 2022</span>
                                 <h2>
-                                    <Link href={route("detail")}>
+                                    <Link href="">
                                         Thought you loved Python? Wait until you
                                         meet Rust
                                     </Link>
@@ -356,10 +341,7 @@ export default function Welcome() {
                         </div>
                         <div className="col-md-6 col-lg-3">
                             <div className="blog-entry">
-                                <Link
-                                    href={route("detail")}
-                                    className="img-link"
-                                >
+                                <Link href="" className="img-link">
                                     <img
                                         src="/images/img_2_horizontal.jpg"
                                         alt="Image"
@@ -368,7 +350,7 @@ export default function Welcome() {
                                 </Link>
                                 <span className="date">Apr. 14th, 2022</span>
                                 <h2>
-                                    <Link href={route("detail")}>
+                                    <Link href="">
                                         Startup vs corporate: What job suits you
                                         best?
                                     </Link>
@@ -386,10 +368,7 @@ export default function Welcome() {
                         </div>
                         <div className="col-md-6 col-lg-3">
                             <div className="blog-entry">
-                                <Link
-                                    href={route("detail")}
-                                    className="img-link"
-                                >
+                                <Link href="" className="img-link">
                                     <img
                                         src="/images/img_3_horizontal.jpg"
                                         alt="Image"
@@ -398,7 +377,7 @@ export default function Welcome() {
                                 </Link>
                                 <span className="date">Apr. 14th, 2022</span>
                                 <h2>
-                                    <Link href={route("detail")}>
+                                    <Link href="">
                                         UK sees highest inflation in 30 years
                                     </Link>
                                 </h2>
@@ -415,10 +394,7 @@ export default function Welcome() {
                         </div>
                         <div className="col-md-6 col-lg-3">
                             <div className="blog-entry">
-                                <Link
-                                    href={route("detail")}
-                                    className="img-link"
-                                >
+                                <Link href="" className="img-link">
                                     <img
                                         src="/images/img_4_horizontal.jpg"
                                         alt="Image"
@@ -427,7 +403,7 @@ export default function Welcome() {
                                 </Link>
                                 <span className="date">Apr. 14th, 2022</span>
                                 <h2>
-                                    <Link href={route("detail")}>
+                                    <Link href="">
                                         Don’t assume your user data in the cloud
                                         is safe
                                     </Link>
@@ -464,10 +440,7 @@ export default function Welcome() {
                             <div className="row g-3">
                                 <div className="col-md-6">
                                     <div className="blog-entry">
-                                        <Link
-                                            href={route("detail")}
-                                            className="img-link"
-                                        >
+                                        <Link href="" className="img-link">
                                             <img
                                                 src="/images/img_1_sq.jpg"
                                                 alt="Image"
@@ -478,7 +451,7 @@ export default function Welcome() {
                                             Apr. 14th, 2022
                                         </span>
                                         <h2>
-                                            <Link href={route("detail")}>
+                                            <Link href="">
                                                 Thought you loved Python? Wait
                                                 until you meet Rust
                                             </Link>
@@ -491,7 +464,7 @@ export default function Welcome() {
                                         </p>
                                         <p>
                                             <Link
-                                                href={route("detail")}
+                                                href=""
                                                 className="btn btn-sm btn-outline-primary"
                                             >
                                                 Read More
@@ -501,10 +474,7 @@ export default function Welcome() {
                                 </div>
                                 <div className="col-md-6">
                                     <div className="blog-entry">
-                                        <Link
-                                            href={route("detail")}
-                                            className="img-link"
-                                        >
+                                        <Link href="" className="img-link">
                                             <img
                                                 src="/images/img_2_sq.jpg"
                                                 alt="Image"
@@ -515,7 +485,7 @@ export default function Welcome() {
                                             Apr. 14th, 2022
                                         </span>
                                         <h2>
-                                            <Link href={route("detail")}>
+                                            <Link href="">
                                                 Startup vs corporate: What job
                                                 suits you best?
                                             </Link>
@@ -528,7 +498,7 @@ export default function Welcome() {
                                         </p>
                                         <p>
                                             <Link
-                                                href={route("detail")}
+                                                href=""
                                                 className="btn btn-sm btn-outline-primary"
                                             >
                                                 Read More
@@ -545,7 +515,7 @@ export default function Welcome() {
                                         Apr. 14th, 2022
                                     </span>
                                     <h3>
-                                        <Link href={route("detail")}>
+                                        <Link href="">
                                             Don’t assume your user data in the
                                             cloud is safe
                                         </Link>
@@ -567,7 +537,7 @@ export default function Welcome() {
                                         Apr. 14th, 2022
                                     </span>
                                     <h3>
-                                        <Link href={route("detail")}>
+                                        <Link href="">
                                             Meta unveils fees on metaverse sales
                                         </Link>
                                     </h3>
@@ -588,7 +558,7 @@ export default function Welcome() {
                                         Apr. 14th, 2022
                                     </span>
                                     <h3>
-                                        <Link href={route("detail")}>
+                                        <Link href="">
                                             UK sees highest inflation in 30
                                             years
                                         </Link>
@@ -626,10 +596,7 @@ export default function Welcome() {
                     <div className="row">
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link
-                                    href={route("detail")}
-                                    className="img-link"
-                                >
+                                <Link href="" className="img-link">
                                     <img
                                         src="/images/img_7_horizontal.jpg"
                                         alt="Image"
@@ -638,7 +605,7 @@ export default function Welcome() {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href={route("detail")}>
+                                        <Link href="">
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -676,10 +643,7 @@ export default function Welcome() {
                         </div>
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link
-                                    href={route("detail")}
-                                    className="img-link"
-                                >
+                                <Link href="" className="img-link">
                                     <img
                                         src="/images/img_6_horizontal.jpg"
                                         alt="Image"
@@ -688,7 +652,7 @@ export default function Welcome() {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href={route("detail")}>
+                                        <Link href="">
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -726,10 +690,7 @@ export default function Welcome() {
                         </div>
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link
-                                    href={route("detail")}
-                                    className="img-link"
-                                >
+                                <Link href="" className="img-link">
                                     <img
                                         src="/images/img_5_horizontal.jpg"
                                         alt="Image"
@@ -738,7 +699,7 @@ export default function Welcome() {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href={route("detail")}>
+                                        <Link href="">
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -777,10 +738,7 @@ export default function Welcome() {
 
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link
-                                    href={route("detail")}
-                                    className="img-link"
-                                >
+                                <Link href="" className="img-link">
                                     <img
                                         src="/images/img_4_horizontal.jpg"
                                         alt="Image"
@@ -789,7 +747,7 @@ export default function Welcome() {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href={route("detail")}>
+                                        <Link href="">
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -827,10 +785,7 @@ export default function Welcome() {
                         </div>
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link
-                                    href={route("detail")}
-                                    className="img-link"
-                                >
+                                <Link href="" className="img-link">
                                     <img
                                         src="/images/img_3_horizontal.jpg"
                                         alt="Image"
@@ -839,7 +794,7 @@ export default function Welcome() {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href={route("detail")}>
+                                        <Link href="">
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -877,10 +832,7 @@ export default function Welcome() {
                         </div>
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link
-                                    href={route("detail")}
-                                    className="img-link"
-                                >
+                                <Link href="" className="img-link">
                                     <img
                                         src="/images/img_2_horizontal.jpg"
                                         alt="Image"
@@ -889,7 +841,7 @@ export default function Welcome() {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href={route("detail")}>
+                                        <Link href="">
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -928,10 +880,7 @@ export default function Welcome() {
 
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link
-                                    href={route("detail")}
-                                    className="img-link"
-                                >
+                                <Link href="" className="img-link">
                                     <img
                                         src="/images/img_1_horizontal.jpg"
                                         alt="Image"
@@ -940,7 +889,7 @@ export default function Welcome() {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href={route("detail")}>
+                                        <Link href="">
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -978,10 +927,7 @@ export default function Welcome() {
                         </div>
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link
-                                    href={route("detail")}
-                                    className="img-link"
-                                >
+                                <Link href="" className="img-link">
                                     <img
                                         src="/images/img_4_horizontal.jpg"
                                         alt="Image"
@@ -990,7 +936,7 @@ export default function Welcome() {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href={route("detail")}>
+                                        <Link href="">
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -1027,10 +973,7 @@ export default function Welcome() {
                         </div>
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link
-                                    href={route("detail")}
-                                    className="img-link"
-                                >
+                                <Link href="" className="img-link">
                                     <img
                                         src="/images/img_3_horizontal.jpg"
                                         alt="Image"
@@ -1039,7 +982,7 @@ export default function Welcome() {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href={route("detail")}>
+                                        <Link href="">
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -1095,7 +1038,7 @@ export default function Welcome() {
                     <div className="row align-items-stretch retro-layout-alt">
                         <div className="col-md-5 order-md-2">
                             <Link
-                                href={route("detail")}
+                                href=""
                                 className="hentry img-1 h-100 gradient"
                             >
                                 <div
@@ -1116,7 +1059,7 @@ export default function Welcome() {
 
                         <div className="col-md-7">
                             <Link
-                                href={route("detail")}
+                                href=""
                                 className="hentry img-2 v-height mb30 gradient"
                             >
                                 <div
@@ -1137,7 +1080,7 @@ export default function Welcome() {
 
                             <div className="two-col d-block d-md-flex justify-content-between">
                                 <Link
-                                    href={route("detail")}
+                                    href=""
                                     className="hentry v-height img-2 gradient"
                                 >
                                     <div
@@ -1156,7 +1099,7 @@ export default function Welcome() {
                                     </div>
                                 </Link>
                                 <Link
-                                    href={route("detail")}
+                                    href=""
                                     className="hentry v-height img-2 ms-auto float-end gradient"
                                 >
                                     <div

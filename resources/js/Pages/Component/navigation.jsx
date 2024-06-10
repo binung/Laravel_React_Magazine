@@ -19,7 +19,7 @@ export default function Navigation({ jsonData }) {
                             <div className="row g-0 align-items-center">
                                 <div className="col-2">
                                     <Link
-                                        href="index.html"
+                                        href="/"
                                         className="logo m-0 float-start"
                                     >
                                         Blogy
@@ -44,50 +44,31 @@ export default function Navigation({ jsonData }) {
                                             <Link href="/">Home</Link>
                                         </li>
                                         <li className="has-children">
-                                            <Link href="category.html">
-                                                Pages
-                                            </Link>
+                                            <Link href="">Pages</Link>
                                             <ul className="dropdown">
                                                 <li>
-                                                    <Link href="search-result.html">
+                                                    <Link href="/search-result">
                                                         Search Result
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="blog.html">
+                                                    <Link href="/blog">
                                                         Blog
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="single.html">
-                                                        Blog Single
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link
-                                                        href={route("category")}
-                                                    >
-                                                        Category
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="about.html">
+                                                    <Link href="/about">
                                                         About
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="contact.html">
+                                                    <Link href="/contact">
                                                         Contact Us
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="#">
-                                                        Menu One
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="#">
-                                                        Menu Two
+                                                    <Link href="">
+                                                        Category
                                                     </Link>
                                                 </li>
                                                 <li className="has-children">
@@ -115,7 +96,7 @@ export default function Navigation({ jsonData }) {
                                             </ul>
                                         </li>
 
-                                        {jsonData
+                                        {/* {jsonData
                                             ? jsonData.categories.map(
                                                   (item) => {
                                                       return (
@@ -135,7 +116,7 @@ export default function Navigation({ jsonData }) {
                                                       );
                                                   }
                                               )
-                                            : ""}
+                                            : ""} */}
                                     </ul>
                                 </div>
                                 <div className="col-2 text-end">
@@ -145,10 +126,7 @@ export default function Navigation({ jsonData }) {
                                     >
                                         <span></span>
                                     </Link>
-                                    <form
-                                        action="#"
-                                        className="search-form d-none d-lg-inline-block"
-                                    >
+                                    <form className="search-form d-none d-lg-inline-block">
                                         <input
                                             type="text"
                                             className="form-control"
