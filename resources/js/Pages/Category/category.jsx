@@ -4,22 +4,6 @@ import Navigation from "../Component/navigation";
 import Footer from "../Component/footer";
 
 export default function Category() {
-    const [data, setData] = useState(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch("/json/data.json"); // Assuming data.json is in the public directory
-                const jsonData = await response.json();
-                setData(jsonData);
-            } catch (error) {
-                console.error("Error fetching data:", error);
-            }
-        };
-
-        fetchData();
-    }, []);
-
     return (
         <>
             <Navigation />

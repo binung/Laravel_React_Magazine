@@ -50,7 +50,7 @@ export default function Welcome({ auth }) {
                                 </div>
                             </Link>
                             <Link
-                                href="single.html"
+                                href={route("detail")}
                                 className="h-entry v-height gradient"
                             >
                                 <div
@@ -74,7 +74,7 @@ export default function Welcome({ auth }) {
                         </div>
                         <div className="col-md-4">
                             <Link
-                                href="single.html"
+                                href={route("detail")}
                                 className="h-entry img-5 h-100 gradient"
                             >
                                 <div
@@ -95,7 +95,7 @@ export default function Welcome({ auth }) {
                         </div>
                         <div className="col-md-4">
                             <Link
-                                href="single.html"
+                                href={route("detail")}
                                 className="h-entry mb-30 v-height gradient"
                             >
                                 <div
@@ -117,7 +117,7 @@ export default function Welcome({ auth }) {
                                 </div>
                             </Link>
                             <Link
-                                href="single.html"
+                                href={route("detail")}
                                 className="h-entry v-height gradient"
                             >
                                 <div
@@ -161,7 +161,7 @@ export default function Welcome({ auth }) {
                                 <div className="col-md-6">
                                     <div className="blog-entry">
                                         <Link
-                                            href="single.html"
+                                            href={route("detail")}
                                             className="img-link"
                                         >
                                             <img
@@ -174,7 +174,7 @@ export default function Welcome({ auth }) {
                                             Apr. 14th, 2022
                                         </span>
                                         <h2>
-                                            <Link href="single.html">
+                                            <Link href={route("detail")}>
                                                 Thought you loved Python? Wait
                                                 until you meet Rust
                                             </Link>
@@ -187,7 +187,7 @@ export default function Welcome({ auth }) {
                                         </p>
                                         <p>
                                             <Link
-                                                href="single.html"
+                                                href={route("detail")}
                                                 className="btn btn-sm btn-outline-primary"
                                             >
                                                 Read More
@@ -198,7 +198,7 @@ export default function Welcome({ auth }) {
                                 <div className="col-md-6">
                                     <div className="blog-entry">
                                         <Link
-                                            href="single.html"
+                                            href={route("detail")}
                                             className="img-link"
                                         >
                                             <img
@@ -211,7 +211,7 @@ export default function Welcome({ auth }) {
                                             Apr. 14th, 2022
                                         </span>
                                         <h2>
-                                            <Link href="single.html">
+                                            <Link href={route("detail")}>
                                                 Startup vs corporate: What job
                                                 suits you best?
                                             </Link>
@@ -224,7 +224,7 @@ export default function Welcome({ auth }) {
                                         </p>
                                         <p>
                                             <Link
-                                                href="single.html"
+                                                href={route("detail")}
                                                 className="btn btn-sm btn-outline-primary"
                                             >
                                                 Read More
@@ -241,7 +241,7 @@ export default function Welcome({ auth }) {
                                         Apr. 14th, 2022
                                     </span>
                                     <h3>
-                                        <Link href="single.html">
+                                        <Link href={route("detail")}>
                                             Don’t assume your user data in the
                                             cloud is safe
                                         </Link>
@@ -263,7 +263,7 @@ export default function Welcome({ auth }) {
                                         Apr. 14th, 2022
                                     </span>
                                     <h3>
-                                        <Link href="single.html">
+                                        <Link href={route("detail")}>
                                             Meta unveils fees on metaverse sales
                                         </Link>
                                     </h3>
@@ -284,7 +284,7 @@ export default function Welcome({ auth }) {
                                         Apr. 14th, 2022
                                     </span>
                                     <h3>
-                                        <Link href="single.html">
+                                        <Link href={route("detail")}>
                                             UK sees highest inflation in 30
                                             years
                                         </Link>
@@ -311,7 +311,10 @@ export default function Welcome({ auth }) {
                     <div className="row">
                         <div className="col-md-6 col-lg-3">
                             <div className="blog-entry">
-                                <Link href="single.html" className="img-link">
+                                <Link
+                                    href={route("detail")}
+                                    className="img-link"
+                                >
                                     <img
                                         src="/images/img_1_horizontal.jpg"
                                         alt="Image"
@@ -320,7 +323,7 @@ export default function Welcome({ auth }) {
                                 </Link>
                                 <span className="date">Apr. 14th, 2022</span>
                                 <h2>
-                                    <Link href="single.html">
+                                    <Link href={route("detail")}>
                                         Thought you loved Python? Wait until you
                                         meet Rust
                                     </Link>
@@ -338,7 +341,10 @@ export default function Welcome({ auth }) {
                         </div>
                         <div className="col-md-6 col-lg-3">
                             <div className="blog-entry">
-                                <Link href="single.html" className="img-link">
+                                <Link
+                                    href={route("detail")}
+                                    className="img-link"
+                                >
                                     <img
                                         src="/images/img_2_horizontal.jpg"
                                         alt="Image"
@@ -347,7 +353,7 @@ export default function Welcome({ auth }) {
                                 </Link>
                                 <span className="date">Apr. 14th, 2022</span>
                                 <h2>
-                                    <Link href="single.html">
+                                    <Link href={route("detail")}>
                                         Startup vs corporate: What job suits you
                                         best?
                                     </Link>
@@ -365,7 +371,10 @@ export default function Welcome({ auth }) {
                         </div>
                         <div className="col-md-6 col-lg-3">
                             <div className="blog-entry">
-                                <Link href="single.html" className="img-link">
+                                <Link
+                                    href={route("detail")}
+                                    className="img-link"
+                                >
                                     <img
                                         src="/images/img_3_horizontal.jpg"
                                         alt="Image"
@@ -374,7 +383,7 @@ export default function Welcome({ auth }) {
                                 </Link>
                                 <span className="date">Apr. 14th, 2022</span>
                                 <h2>
-                                    <Link href="single.html">
+                                    <Link href={route("detail")}>
                                         UK sees highest inflation in 30 years
                                     </Link>
                                 </h2>
@@ -391,7 +400,10 @@ export default function Welcome({ auth }) {
                         </div>
                         <div className="col-md-6 col-lg-3">
                             <div className="blog-entry">
-                                <Link href="single.html" className="img-link">
+                                <Link
+                                    href={route("detail")}
+                                    className="img-link"
+                                >
                                     <img
                                         src="/images/img_4_horizontal.jpg"
                                         alt="Image"
@@ -400,7 +412,7 @@ export default function Welcome({ auth }) {
                                 </Link>
                                 <span className="date">Apr. 14th, 2022</span>
                                 <h2>
-                                    <Link href="single.html">
+                                    <Link href={route("detail")}>
                                         Don’t assume your user data in the cloud
                                         is safe
                                     </Link>
@@ -438,7 +450,7 @@ export default function Welcome({ auth }) {
                                 <div className="col-md-6">
                                     <div className="blog-entry">
                                         <Link
-                                            href="single.html"
+                                            href={route("detail")}
                                             className="img-link"
                                         >
                                             <img
@@ -451,7 +463,7 @@ export default function Welcome({ auth }) {
                                             Apr. 14th, 2022
                                         </span>
                                         <h2>
-                                            <Link href="single.html">
+                                            <Link href={route("detail")}>
                                                 Thought you loved Python? Wait
                                                 until you meet Rust
                                             </Link>
@@ -464,7 +476,7 @@ export default function Welcome({ auth }) {
                                         </p>
                                         <p>
                                             <Link
-                                                href="single.html"
+                                                href={route("detail")}
                                                 className="btn btn-sm btn-outline-primary"
                                             >
                                                 Read More
@@ -475,7 +487,7 @@ export default function Welcome({ auth }) {
                                 <div className="col-md-6">
                                     <div className="blog-entry">
                                         <Link
-                                            href="single.html"
+                                            href={route("detail")}
                                             className="img-link"
                                         >
                                             <img
@@ -488,7 +500,7 @@ export default function Welcome({ auth }) {
                                             Apr. 14th, 2022
                                         </span>
                                         <h2>
-                                            <Link href="single.html">
+                                            <Link href={route("detail")}>
                                                 Startup vs corporate: What job
                                                 suits you best?
                                             </Link>
@@ -501,7 +513,7 @@ export default function Welcome({ auth }) {
                                         </p>
                                         <p>
                                             <Link
-                                                href="single.html"
+                                                href={route("detail")}
                                                 className="btn btn-sm btn-outline-primary"
                                             >
                                                 Read More
@@ -518,7 +530,7 @@ export default function Welcome({ auth }) {
                                         Apr. 14th, 2022
                                     </span>
                                     <h3>
-                                        <Link href="single.html">
+                                        <Link href={route("detail")}>
                                             Don’t assume your user data in the
                                             cloud is safe
                                         </Link>
@@ -540,7 +552,7 @@ export default function Welcome({ auth }) {
                                         Apr. 14th, 2022
                                     </span>
                                     <h3>
-                                        <Link href="single.html">
+                                        <Link href={route("detail")}>
                                             Meta unveils fees on metaverse sales
                                         </Link>
                                     </h3>
@@ -561,7 +573,7 @@ export default function Welcome({ auth }) {
                                         Apr. 14th, 2022
                                     </span>
                                     <h3>
-                                        <Link href="single.html">
+                                        <Link href={route("detail")}>
                                             UK sees highest inflation in 30
                                             years
                                         </Link>
@@ -599,7 +611,10 @@ export default function Welcome({ auth }) {
                     <div className="row">
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link href="single.html" className="img-link">
+                                <Link
+                                    href={route("detail")}
+                                    className="img-link"
+                                >
                                     <img
                                         src="/images/img_7_horizontal.jpg"
                                         alt="Image"
@@ -608,7 +623,7 @@ export default function Welcome({ auth }) {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href="single.html">
+                                        <Link href={route("detail")}>
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -646,7 +661,10 @@ export default function Welcome({ auth }) {
                         </div>
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link href="single.html" className="img-link">
+                                <Link
+                                    href={route("detail")}
+                                    className="img-link"
+                                >
                                     <img
                                         src="/images/img_6_horizontal.jpg"
                                         alt="Image"
@@ -655,7 +673,7 @@ export default function Welcome({ auth }) {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href="single.html">
+                                        <Link href={route("detail")}>
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -693,7 +711,10 @@ export default function Welcome({ auth }) {
                         </div>
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link href="single.html" className="img-link">
+                                <Link
+                                    href={route("detail")}
+                                    className="img-link"
+                                >
                                     <img
                                         src="/images/img_5_horizontal.jpg"
                                         alt="Image"
@@ -702,7 +723,7 @@ export default function Welcome({ auth }) {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href="single.html">
+                                        <Link href={route("detail")}>
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -741,7 +762,10 @@ export default function Welcome({ auth }) {
 
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link href="single.html" className="img-link">
+                                <Link
+                                    href={route("detail")}
+                                    className="img-link"
+                                >
                                     <img
                                         src="/images/img_4_horizontal.jpg"
                                         alt="Image"
@@ -750,7 +774,7 @@ export default function Welcome({ auth }) {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href="single.html">
+                                        <Link href={route("detail")}>
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -788,7 +812,10 @@ export default function Welcome({ auth }) {
                         </div>
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link href="single.html" className="img-link">
+                                <Link
+                                    href={route("detail")}
+                                    className="img-link"
+                                >
                                     <img
                                         src="/images/img_3_horizontal.jpg"
                                         alt="Image"
@@ -797,7 +824,7 @@ export default function Welcome({ auth }) {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href="single.html">
+                                        <Link href={route("detail")}>
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -835,7 +862,10 @@ export default function Welcome({ auth }) {
                         </div>
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link href="single.html" className="img-link">
+                                <Link
+                                    href={route("detail")}
+                                    className="img-link"
+                                >
                                     <img
                                         src="/images/img_2_horizontal.jpg"
                                         alt="Image"
@@ -844,7 +874,7 @@ export default function Welcome({ auth }) {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href="single.html">
+                                        <Link href={route("detail")}>
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -883,7 +913,10 @@ export default function Welcome({ auth }) {
 
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link href="single.html" className="img-link">
+                                <Link
+                                    href={route("detail")}
+                                    className="img-link"
+                                >
                                     <img
                                         src="/images/img_1_horizontal.jpg"
                                         alt="Image"
@@ -892,7 +925,7 @@ export default function Welcome({ auth }) {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href="single.html">
+                                        <Link href={route("detail")}>
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -930,7 +963,10 @@ export default function Welcome({ auth }) {
                         </div>
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link href="single.html" className="img-link">
+                                <Link
+                                    href={route("detail")}
+                                    className="img-link"
+                                >
                                     <img
                                         src="/images/img_4_horizontal.jpg"
                                         alt="Image"
@@ -939,7 +975,7 @@ export default function Welcome({ auth }) {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href="single.html">
+                                        <Link href={route("detail")}>
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -976,7 +1012,10 @@ export default function Welcome({ auth }) {
                         </div>
                         <div className="col-lg-4 mb-4">
                             <div className="post-entry-alt">
-                                <Link href="single.html" className="img-link">
+                                <Link
+                                    href={route("detail")}
+                                    className="img-link"
+                                >
                                     <img
                                         src="/images/img_3_horizontal.jpg"
                                         alt="Image"
@@ -985,7 +1024,7 @@ export default function Welcome({ auth }) {
                                 </Link>
                                 <div className="excerpt">
                                     <h2>
-                                        <Link href="single.html">
+                                        <Link href={route("detail")}>
                                             Startup vs corporate: What job suits
                                             you best?
                                         </Link>
@@ -1041,7 +1080,7 @@ export default function Welcome({ auth }) {
                     <div className="row align-items-stretch retro-layout-alt">
                         <div className="col-md-5 order-md-2">
                             <Link
-                                href="single.html"
+                                href={route("detail")}
                                 className="hentry img-1 h-100 gradient"
                             >
                                 <div
@@ -1062,7 +1101,7 @@ export default function Welcome({ auth }) {
 
                         <div className="col-md-7">
                             <Link
-                                href="single.html"
+                                href={route("detail")}
                                 className="hentry img-2 v-height mb30 gradient"
                             >
                                 <div
@@ -1083,7 +1122,7 @@ export default function Welcome({ auth }) {
 
                             <div className="two-col d-block d-md-flex justify-content-between">
                                 <Link
-                                    href="single.html"
+                                    href={route("detail")}
                                     className="hentry v-height img-2 gradient"
                                 >
                                     <div
@@ -1102,7 +1141,7 @@ export default function Welcome({ auth }) {
                                     </div>
                                 </Link>
                                 <Link
-                                    href="single.html"
+                                    href={route("detail")}
                                     className="hentry v-height img-2 ms-auto float-end gradient"
                                 >
                                     <div

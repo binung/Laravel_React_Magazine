@@ -1,8 +1,26 @@
 import { Link } from "@inertiajs/react";
+import React, { useState, useEffect } from "react";
+
 import Navigation from "../Component/navigation";
 import Footer from "../Component/footer";
 
 export default function Detail() {
+    const [data, setData] = useState(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch("/json/data.json"); // Assuming data.json is in the public directory
+                const jsonData = await response.json();
+                setData(jsonData);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
     return (
         <>
             <Navigation />
@@ -16,8 +34,18 @@ export default function Detail() {
                         <div className="col-md-6">
                             <div className="post-entry text-center">
                                 <h1 className="mb-4">
-                                    Don’t assume your user data in the cloud is
-                                    safe
+                                    {/* Don’t assume your user data in the cloud is
+                                    safe */}
+                                    {data ? (
+                                        <span>
+                                            {
+                                                data.categories[0].posts[0]
+                                                    .PostDescription
+                                            }
+                                        </span>
+                                    ) : (
+                                        <p>Loading data...</p>
+                                    )}
                                 </h1>
                                 <div className="post-meta align-items-center text-center">
                                     <figure className="author-figure mb-0 me-3 d-inline-block">
@@ -43,33 +71,13 @@ export default function Detail() {
                     <div className="row blog-entries element-animate">
                         <div className="col-md-12 col-lg-8 main-content">
                             <div className="post-content-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Praesentium nam quas
-                                    inventore, ut iure iste modi eos adipisci ad
-                                    ea itaque labore earum autem nobis et
-                                    numquam, minima eius. Nam eius, non unde ut
-                                    aut sunt eveniet rerum repellendus porro.
-                                </p>
-                                <p>
-                                    Sint ab voluptates itaque, ipsum porro qui
-                                    obcaecati cumque quas sit vel. Voluptatum
-                                    provident id quis quo. Eveniet maiores
-                                    perferendis officia veniam est laborum,
-                                    expedita fuga doloribus natus repellendus
-                                    dolorem ab similique sint eius cupiditate
-                                    necessitatibus, magni nesciunt ex eos.
-                                </p>
-                                <p>
-                                    Quis eius aspernatur, eaque culpa cumque
-                                    reiciendis, nobis at earum assumenda
-                                    similique ut? Aperiam vel aut, ex
-                                    exercitationem eos consequuntur eaque culpa
-                                    totam, deserunt, aspernatur quae eveniet hic
-                                    provident ullam tempora error repudiandae
-                                    sapiente illum rerum itaque voluptatem.
-                                    Commodi, sequi.
-                                </p>
+                                {data ? (
+                                    <span>
+                                        {data.categories[0].categorydescription}
+                                    </span>
+                                ) : (
+                                    <p>Loading data...</p>
+                                )}
                                 <div className="row my-4">
                                     <div className="col-md-12 mb-4">
                                         <img
@@ -93,65 +101,34 @@ export default function Detail() {
                                         />
                                     </div>
                                 </div>
-                                <p>
-                                    Quibusdam autem, quas molestias recusandae
-                                    aperiam molestiae modi qui ipsam vel.
-                                    Placeat tenetur veritatis tempore quos
-                                    impedit dicta, error autem, quae sint
-                                    inventore ipsa quidem. Quo voluptate
-                                    quisquam reiciendis, minus, animi minima eum
-                                    officia doloremque repellat eos, odio
-                                    doloribus cum.
-                                </p>
-                                <p>
-                                    Temporibus quo dolore veritatis doloribus
-                                    delectus dolores perspiciatis recusandae
-                                    ducimus, nisi quod, incidunt ut quaerat,
-                                    magnam cupiditate. Aut, laboriosam magnam,
-                                    nobis dolore fugiat impedit necessitatibus
-                                    nisi cupiditate, quas repellat itaque
-                                    molestias sit libero voluptas eveniet omnis
-                                    illo ullam dolorem minima.
-                                </p>
-                                <p>
-                                    Porro amet accusantium libero fugit totam,
-                                    deserunt ipsa, dolorem, vero expedita illo
-                                    similique saepe nisi deleniti. Cumque,
-                                    laboriosam, porro! Facilis voluptatem sequi
-                                    nulla quidem, provident eius quos pariatur
-                                    maxime sapiente illo nostrum quibusdam
-                                    aliquid fugiat! Earum quod fuga id officia.
-                                </p>
-                                <p>
-                                    Illo magnam at dolore ad enim fugiat ut
-                                    maxime facilis autem, nulla cumque quis
-                                    commodi eos nisi unde soluta, ipsa eius
-                                    aspernatur sint atque! Nihil, eveniet illo
-                                    ea, mollitia fuga accusamus dolor dolorem
-                                    perspiciatis rerum hic, consectetur error
-                                    rem aspernatur!
-                                </p>
-
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Temporibus magni explicabo
-                                    id molestiae, minima quas assumenda
-                                    consectetur, nobis neque rem, incidunt quam
-                                    tempore perferendis provident obcaecati
-                                    sapiente, animi vel expedita omnis quae
-                                    ipsa! Obcaecati eligendi sed odio labore
-                                    vero reiciendis facere accusamus molestias
-                                    eaque impedit, consequuntur quae fuga vitae
-                                    fugit?
-                                </p>
+                                {data ? (
+                                    <span>
+                                        {
+                                            data.categories[0].posts[0]
+                                                .postdescription
+                                        }
+                                    </span>
+                                ) : (
+                                    <p>Loading data...</p>
+                                )}
                             </div>
 
                             <div className="pt-5">
                                 <p>
-                                    Categories: <Link href="#">Food</Link>,{" "}
-                                    <Link href="#">Travel</Link> Tags:{" "}
-                                    <Link href="#">#manila</Link>,{" "}
-                                    <Link href="#">#asia</Link>
+                                    Categories:
+                                    {data ? (
+                                        data.categories[0].categorykeyword.map(
+                                            (item) => {
+                                                return (
+                                                    <Link href="#">
+                                                        &nbsp;&nbsp;{item}
+                                                    </Link>
+                                                );
+                                            }
+                                        )
+                                    ) : (
+                                        <p>no exist</p>
+                                    )}
                                 </p>
                             </div>
 
@@ -616,42 +593,21 @@ export default function Detail() {
                             <div className="sidebar-box">
                                 <h3 className="heading">Tags</h3>
                                 <ul className="tags">
-                                    <li>
-                                        <Link href="#">Travel</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#">Adventure</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#">Food</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#">Lifestyle</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#">Business</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#">Freelancing</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#">Travel</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#">Adventure</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#">Food</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#">Lifestyle</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#">Business</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#">Freelancing</Link>
-                                    </li>
+                                    {data ? (
+                                        data.categories[0].categorySEOSlug.map(
+                                            (item) => {
+                                                return (
+                                                    <li>
+                                                        <Link href="#">
+                                                            {item}
+                                                        </Link>
+                                                    </li>
+                                                );
+                                            }
+                                        )
+                                    ) : (
+                                        <p>no exist</p>
+                                    )}
                                 </ul>
                             </div>
                         </div>

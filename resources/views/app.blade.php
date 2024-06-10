@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Blogy &mdash; Free Bootstrap 5 Website Template by Untree.co</title>
+    <title>Blogy Website</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="/css/glightbox.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/flatpickr.min.css">
-
 
 
     <script src="/js/bootstrap.bundle.min.js"></script>
