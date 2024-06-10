@@ -1,6 +1,6 @@
 import { Link } from "@inertiajs/react";
 
-export default function Navigation() {
+export default function Navigation({ jsonData }) {
     return (
         <>
             <div className="site-mobile-menu site-navbar-target">
@@ -114,21 +114,28 @@ export default function Navigation() {
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li>
-                                            <Link href="category.html">
-                                                Culture
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="category.html">
-                                                Business
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="category.html">
-                                                Politics
-                                            </Link>
-                                        </li>
+
+                                        {jsonData
+                                            ? jsonData.categories.map(
+                                                  (item) => {
+                                                      return (
+                                                          <li key={item.id}>
+                                                              <Link
+                                                                  href={route(
+                                                                      "category.show",
+                                                                      {
+                                                                          category_id:
+                                                                              item.id,
+                                                                      }
+                                                                  )}
+                                                              >
+                                                                  {item.name}
+                                                              </Link>
+                                                          </li>
+                                                      );
+                                                  }
+                                              )
+                                            : ""}
                                     </ul>
                                 </div>
                                 <div className="col-2 text-end">

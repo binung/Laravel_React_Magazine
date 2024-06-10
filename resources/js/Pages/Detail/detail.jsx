@@ -1,29 +1,12 @@
 import { Link } from "@inertiajs/react";
-import React, { useState, useEffect } from "react";
 
 import Navigation from "../Component/navigation";
 import Footer from "../Component/footer";
 
-export default function Detail() {
-    const [data, setData] = useState(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch("/json/data.json"); // Assuming data.json is in the public directory
-                const jsonData = await response.json();
-                setData(jsonData);
-            } catch (error) {
-                console.error("Error fetching data:", error);
-            }
-        };
-
-        fetchData();
-    }, []);
-
+export default function Detail({ filteredPosts }) {
     return (
         <>
-            <Navigation />
+            <Navigation filteredPosts={{ filteredPosts }} />
 
             <div
                 className="site-cover site-cover-sm same-height overlay single-page"
@@ -36,12 +19,9 @@ export default function Detail() {
                                 <h1 className="mb-4">
                                     {/* Don’t assume your user data in the cloud is
                                     safe */}
-                                    {data ? (
+                                    {filteredPosts ? (
                                         <span>
-                                            {
-                                                data.categories[0].posts[0]
-                                                    .PostDescription
-                                            }
+                                            {filteredPosts.posts[0].Description}
                                         </span>
                                     ) : (
                                         <p>Loading data...</p>
@@ -71,9 +51,12 @@ export default function Detail() {
                     <div className="row blog-entries element-animate">
                         <div className="col-md-12 col-lg-8 main-content">
                             <div className="post-content-body">
-                                {data ? (
+                                {filteredPosts ? (
                                     <span>
-                                        {data.categories[0].categorydescription}
+                                        {
+                                            filteredPosts.categories[0]
+                                                .description
+                                        }
                                     </span>
                                 ) : (
                                     <p>Loading data...</p>
@@ -101,12 +84,9 @@ export default function Detail() {
                                         />
                                     </div>
                                 </div>
-                                {data ? (
+                                {filteredPosts ? (
                                     <span>
-                                        {
-                                            data.categories[0].posts[0]
-                                                .postdescription
-                                        }
+                                        {filteredPosts.posts[0].description}
                                     </span>
                                 ) : (
                                     <p>Loading data...</p>
@@ -116,8 +96,8 @@ export default function Detail() {
                             <div className="pt-5">
                                 <p>
                                     Categories:
-                                    {data ? (
-                                        data.categories[0].categorykeyword.map(
+                                    {filteredPosts ? (
+                                        filteredPosts.categories[0].keyword.map(
                                             (item) => {
                                                 return (
                                                     <Link href="#">
@@ -593,8 +573,8 @@ export default function Detail() {
                             <div className="sidebar-box">
                                 <h3 className="heading">Tags</h3>
                                 <ul className="tags">
-                                    {data ? (
-                                        data.categories[0].categorySEOSlug.map(
+                                    {filteredPosts ? (
+                                        filteredPosts.categories[0].SEOSlug.map(
                                             (item) => {
                                                 return (
                                                     <li>

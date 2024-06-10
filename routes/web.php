@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PostController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -22,14 +23,14 @@ Route::get('/detail', function () {
     return Inertia::render('Detail/detail');
 })->name('detail');
 
+
+Route::get('/posts/category/{category_id}', [PostController::class, 'getPostsByCategory'])->name('category.show');
+Route::get('/posts/detail/{id}', [PostController::class, 'getPostsById'])->name('post.detail');
+
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
 
 require __DIR__ . '/auth.php';

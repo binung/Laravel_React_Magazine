@@ -1,28 +1,43 @@
 import { Link, Head } from "@inertiajs/react";
 import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setJsonData } from "../features/jsonData/jsonDataSlice";
+
 import Navigation from "./Component/navigation";
 import Footer from "./Component/footer";
 
 export default function Welcome() {
-    const [data, setData] = useState(null);
+    const dispatch = useDispatch();
+    const jsonData = useSelector((state) => state.jsonData.jsonData);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await fetch("/json/data.json"); // Assuming data.json is in the public directory
                 const jsonData = await response.json();
-                setData(jsonData);
+                return jsonData;
             } catch (error) {
-                console.error("Error fetching data:", error);
+                return "";
             }
         };
 
-        fetchData();
+        fetchData().then((data) => {
+            dispatch(setJsonData(data));
+        });
     }, []);
+
+    /*
+    useEffect(() => {
+        // Fetch the JSON data (you might fetch this from an API or read from a file)
+        fetch("/json/data.json")
+            .then((response) => response.json())
+            .then((data) => dispatch(setJsonData(data)));
+    }, []);
+    */
 
     return (
         <>
-            <Navigation />
+            <Navigation jsonData={jsonData} />
             <section className="section bg-light">
                 <div className="container">
                     <div className="row align-items-stretch retro-layout">

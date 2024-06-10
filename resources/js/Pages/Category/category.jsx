@@ -1,12 +1,15 @@
 import { Link } from "@inertiajs/react";
-import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
+
 import Navigation from "../Component/navigation";
 import Footer from "../Component/footer";
 
 export default function Category() {
+    const jsonData = useSelector((state) => state.jsonData.jsonData);
+
     return (
         <>
-            <Navigation />
+            <Navigation jsonData={jsonData} />
 
             <div className="section search-result-wrap">
                 <div className="container">
@@ -23,7 +26,7 @@ export default function Category() {
                                     className="img-link me-4"
                                 >
                                     <img
-                                        src="images/img_1_sq.jpg"
+                                        src="/images/img_1_sq.jpg"
                                         alt="Image"
                                         className="img-fluid"
                                     />
@@ -61,7 +64,7 @@ export default function Category() {
                                     className="img-link me-4"
                                 >
                                     <img
-                                        src="images/img_2_sq.jpg"
+                                        src="/images/img_2_sq.jpg"
                                         alt="Image"
                                         className="img-fluid"
                                     />
@@ -99,7 +102,7 @@ export default function Category() {
                                     className="img-link me-4"
                                 >
                                     <img
-                                        src="images/img_3_sq.jpg"
+                                        src="/images/img_3_sq.jpg"
                                         alt="Image"
                                         className="img-fluid"
                                     />
@@ -137,7 +140,7 @@ export default function Category() {
                                     className="img-link me-4"
                                 >
                                     <img
-                                        src="images/img_4_sq.jpg"
+                                        src="/images/img_4_sq.jpg"
                                         alt="Image"
                                         className="img-fluid"
                                     />
@@ -175,7 +178,7 @@ export default function Category() {
                                     className="img-link me-4"
                                 >
                                     <img
-                                        src="images/img_5_sq.jpg"
+                                        src="/images/img_5_sq.jpg"
                                         alt="Image"
                                         className="img-fluid"
                                     />
@@ -244,7 +247,7 @@ export default function Category() {
                                         <li>
                                             <Link href="">
                                                 <img
-                                                    src="images/img_1_sq.jpg"
+                                                    src="/images/img_1_sq.jpg"
                                                     alt="Image placeholder"
                                                     className="me-4 rounded"
                                                 />
@@ -265,7 +268,7 @@ export default function Category() {
                                         <li>
                                             <Link href="">
                                                 <img
-                                                    src="images/img_2_sq.jpg"
+                                                    src="/images/img_2_sq.jpg"
                                                     alt="Image placeholder"
                                                     className="me-4 rounded"
                                                 />
@@ -286,7 +289,7 @@ export default function Category() {
                                         <li>
                                             <Link href="">
                                                 <img
-                                                    src="images/img_3_sq.jpg"
+                                                    src="/images/img_3_sq.jpg"
                                                     alt="Image placeholder"
                                                     className="me-4 rounded"
                                                 />
