@@ -1,6 +1,28 @@
 import { Link } from "@inertiajs/react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setJsonData } from "@/features/jsonData/jsonDataSlice";
 
-export default function Navigation({ jsonData }) {
+export default function Navigation() {
+    const dispatch = useDispatch();
+    const jsonData = useSelector((state) => state.jsonData.jsonData);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch("/json/data.json"); // Assuming data.json is in the public directory
+                const jsonData = await response.json();
+                return jsonData;
+            } catch (error) {
+                return "";
+            }
+        };
+
+        fetchData().then((data) => {
+            dispatch(setJsonData(data));
+        });
+    }, []);
+
     return (
         <>
             <div className="site-mobile-menu site-navbar-target">
@@ -96,7 +118,7 @@ export default function Navigation({ jsonData }) {
                                             </ul>
                                         </li>
 
-                                        {/* {jsonData
+                                        {jsonData
                                             ? jsonData.categories.map(
                                                   (item) => {
                                                       return (
@@ -116,7 +138,7 @@ export default function Navigation({ jsonData }) {
                                                       );
                                                   }
                                               )
-                                            : ""} */}
+                                            : ""}
                                     </ul>
                                 </div>
                                 <div className="col-2 text-end">

@@ -42,6 +42,7 @@ Route::get('/contact', function () {
 
 Route::get('/posts/category/{category_id}', [PostController::class, 'getPostsByCategory'])->name('category.show');
 Route::get('/posts/detail/{id}', [PostController::class, 'getPostsById'])->name('post.detail');
+Route::post('/post', [PostController::class, 'storePost']);
 
 
 Route::get('/dashboard', function () {

@@ -13,7 +13,7 @@ export default function Detail({ post }) {
 
             <div
                 className="site-cover site-cover-sm same-height overlay single-page"
-                style={{ backgroundImage: "url('images/hero_5.jpg')" }}
+                style={{ backgroundImage: "url('/images/hero_5.jpg')" }}
             >
                 <div className="container">
                     <div className="row same-height justify-content-center">
@@ -39,7 +39,7 @@ export default function Detail({ post }) {
                                     <span className="d-inline-block mt-1">
                                         {post.by}
                                     </span>
-                                    <span>&nbsp;-&nbsp; {post.DateTime}</span>
+                                    <span>&nbsp;&nbsp; {post.DateTime}</span>
                                 </div>
                             </div>
                         </div>
@@ -53,13 +53,15 @@ export default function Detail({ post }) {
                         <div className="col-md-12 col-lg-8 main-content">
                             <div className="post-content-body">
                                 {post ? (
-                                    <span>
-                                        {jsonData.categories.map((item) => {
-                                            if (item.id == post.category_id) {
-                                                return item.description;
-                                            }
-                                        })}
-                                    </span>
+                                    jsonData.categories.map((value, index) => {
+                                        if (value.id == post.category_id) {
+                                            return (
+                                                <span key={index}>
+                                                    {value.description}
+                                                </span>
+                                            );
+                                        }
+                                    })
                                 ) : (
                                     <p>Loading data...</p>
                                 )}
@@ -87,13 +89,7 @@ export default function Detail({ post }) {
                                     </div>
                                 </div>
                                 {post ? (
-                                    <span>
-                                        {jsonData.categories.map((item) => {
-                                            if (item.id == post.category_id) {
-                                                return post.description;
-                                            }
-                                        })}
-                                    </span>
+                                    <span>{post.description}</span>
                                 ) : (
                                     <p>Loading data...</p>
                                 )}
@@ -103,10 +99,10 @@ export default function Detail({ post }) {
                                 <p>
                                     Categories:
                                     {post ? (
-                                        post.keyword.map((item) => {
+                                        post.keyword.map((value, index) => {
                                             return (
-                                                <Link href="#">
-                                                    &nbsp;&nbsp;{item}
+                                                <Link key={index} href="#">
+                                                    &nbsp;&nbsp;{value}
                                                 </Link>
                                             );
                                         })
@@ -188,7 +184,7 @@ export default function Detail({ post }) {
                                             <li className="comment">
                                                 <div className="vcard">
                                                     <img
-                                                        src="images/person_3.jpg"
+                                                        src="/images/person_3.jpg"
                                                         alt="Image placeholder"
                                                     />
                                                 </div>
@@ -225,7 +221,7 @@ export default function Detail({ post }) {
                                                     <li className="comment">
                                                         <div className="vcard">
                                                             <img
-                                                                src="images/person_4.jpg"
+                                                                src="/images/person_4.jpg"
                                                                 alt="Image placeholder"
                                                             />
                                                         </div>
@@ -268,7 +264,7 @@ export default function Detail({ post }) {
                                                             <li className="comment">
                                                                 <div className="vcard">
                                                                     <img
-                                                                        src="images/person_5.jpg"
+                                                                        src="/images/person_5.jpg"
                                                                         alt="Image placeholder"
                                                                     />
                                                                 </div>
@@ -334,7 +330,7 @@ export default function Detail({ post }) {
                                     <li className="comment">
                                         <div className="vcard">
                                             <img
-                                                src="images/person_1.jpg"
+                                                src="/images/person_1.jpg"
                                                 alt="Image placeholder"
                                             />
                                         </div>
@@ -369,7 +365,7 @@ export default function Detail({ post }) {
                                     <h3 className="mb-5">Leave Link comment</h3>
                                     <form action="#" className="p-5 bg-light">
                                         <div className="form-group">
-                                            <label for="name">Name *</label>
+                                            <label htmlFor="name">Name *</label>
                                             <input
                                                 type="text"
                                                 className="form-control"
@@ -377,7 +373,9 @@ export default function Detail({ post }) {
                                             />
                                         </div>
                                         <div className="form-group">
-                                            <label for="email">Email *</label>
+                                            <label htmlFor="email">
+                                                Email *
+                                            </label>
                                             <input
                                                 type="email"
                                                 className="form-control"
@@ -385,7 +383,9 @@ export default function Detail({ post }) {
                                             />
                                         </div>
                                         <div className="form-group">
-                                            <label for="website">Website</label>
+                                            <label htmlFor="website">
+                                                Website
+                                            </label>
                                             <input
                                                 type="url"
                                                 className="form-control"
@@ -394,7 +394,9 @@ export default function Detail({ post }) {
                                         </div>
 
                                         <div className="form-group">
-                                            <label for="message">Message</label>
+                                            <label htmlFor="message">
+                                                Message
+                                            </label>
                                             <textarea
                                                 name=""
                                                 id="message"
@@ -433,7 +435,7 @@ export default function Detail({ post }) {
                             <div className="sidebar-box">
                                 <div className="bio text-center">
                                     <img
-                                        src="images/person_2.jpg"
+                                        src="/images/person_2.jpg"
                                         alt="Image Placeholder"
                                         className="img-fluid mb-3"
                                     />
@@ -479,15 +481,15 @@ export default function Detail({ post }) {
                                         <li>
                                             <Link href="">
                                                 <img
-                                                    src="images/img_1_sq.jpg"
+                                                    src="/images/img_1_sq.jpg"
                                                     alt="Image placeholder"
                                                     className="me-4 rounded"
                                                 />
                                                 <div className="text">
                                                     <h4>
                                                         There’s Link Cool New
-                                                        Way for Men href Wear
-                                                        Socks and Sandals
+                                                        Way htmlFor Men href
+                                                        Wear Socks and Sandals
                                                     </h4>
                                                     <div className="post-meta">
                                                         <span className="mr-2">
@@ -507,8 +509,8 @@ export default function Detail({ post }) {
                                                 <div className="text">
                                                     <h4>
                                                         There’s Link Cool New
-                                                        Way for Men href Wear
-                                                        Socks and Sandals
+                                                        Way htmlFor Men href
+                                                        Wear Socks and Sandals
                                                     </h4>
                                                     <div className="post-meta">
                                                         <span className="mr-2">
@@ -528,8 +530,8 @@ export default function Detail({ post }) {
                                                 <div className="text">
                                                     <h4>
                                                         There’s Link Cool New
-                                                        Way for Men href Wear
-                                                        Socks and Sandals
+                                                        Way htmlFor Men href
+                                                        Wear Socks and Sandals
                                                     </h4>
                                                     <div className="post-meta">
                                                         <span className="mr-2">
@@ -577,18 +579,16 @@ export default function Detail({ post }) {
                             <div className="sidebar-box">
                                 <h3 className="heading">Tags</h3>
                                 <ul className="tags">
-                                    {filteredPosts ? (
-                                        filteredPosts.categories[0].SEOSlug.map(
-                                            (item) => {
-                                                return (
-                                                    <li>
-                                                        <Link href="#">
-                                                            {item}
-                                                        </Link>
-                                                    </li>
-                                                );
-                                            }
-                                        )
+                                    {post ? (
+                                        post.SEOSlug.map((value, index) => {
+                                            return (
+                                                <li key={index}>
+                                                    <Link href="#">
+                                                        {value}
+                                                    </Link>
+                                                </li>
+                                            );
+                                        })
                                     ) : (
                                         <p>no exist</p>
                                     )}

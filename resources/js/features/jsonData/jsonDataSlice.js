@@ -1,8 +1,7 @@
-// src/features/jsonData/jsonDataSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  jsonData: {} // Initialize your state here
+  jsonData: {categories: [], posts: []} // Initialize your state here
 };
 
 const jsonDataSlice = createSlice({
