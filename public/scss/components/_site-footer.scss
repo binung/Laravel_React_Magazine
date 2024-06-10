@@ -1,0 +1,76 @@
+.site-footer {
+	background: $primary;
+	font-size: 14px;	
+	padding: 70px 0;
+	color: rgba($white, 1);
+
+	a {
+		color: rgba($white, .5);
+		position: relative;
+		display: inline-block;
+		
+		&:hover {
+			color: $white;
+			
+		}
+	}
+
+	.footer-cta {
+		h2 {
+			font-size: 30px;
+			color: $white;
+		}
+	}
+	.btn {
+		&:before {
+			display: none;
+		}
+	}
+	.widget {
+		margin-bottom: 40px;
+		display: block;
+		h3 {
+			font-size: 12px;
+			font-weight: 600;
+			letter-spacing: .1rem;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+			color: $white;
+		}
+
+		.links {
+			width: 150px;
+			li {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.social {
+		li {
+			display: inline-block;
+			a {
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				position: relative;
+				background: $white;
+				border-radius: 4px;
+				color: $primary;
+				&:before {
+					display: none;
+				}
+				> span {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+				&:hover {
+					background: $white;
+					color: $primary;
+				}
+			}
+		}
+	}
+}
