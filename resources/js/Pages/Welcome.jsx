@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Navigation from "./Component/navigation";
 import Footer from "./Component/footer";
 
-export default function Welcome({ auth }) {
+export default function Welcome() {
     const [data, setData] = useState(null);
 
     useEffect(() => {

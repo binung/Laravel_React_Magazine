@@ -1,110 +1,64 @@
 {
     "categories": [
-      {
-        "categoryId": 1,
-        "categoryName": "Technology",
-        "categorySEOSlug": ["Travel", "Adventure", "Food", "Businees", "Freelancing"],
-        "categorymetatitle": "Latest Technology News",
-        "categorykeyword": ["Food", "Travel"],
-        "categorydescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro. Sint ab voluptates itaque, ipsum porro qui obcaecati cumque quas sit vel. Voluptatum provident id quis quo. Eveniet maiores perferendis officia veniam est laborum, expedita fuga doloribus natus repellendus dolorem ab similique sint eius cupiditate necessitatibus, magni nesciunt ex eos. Quis eius aspernatur, eaque culpa cumque reiciendis, nobis at earum assumenda similique ut? Aperiam vel aut, ex exercitationem eos consequuntur eaque culpa totam, deserunt, aspernatur quae eveniet hic provident ullam tempora error repudiandae sapiente illum rerum itaque voluptatem. Commodi, sequi.",
-        "sortOrder": 1,
-        "isActive": true,
-        "isPopular": true,
-        "posts": [
-          {
-            "postId": 101,
-            "PostDescription": "Don’t assume your user data in the cloud is safe",
-            "PostDateTime": "2024-06-10T10:00:00Z",
-            "PostBy": "Author1",
+        {
+            "id": 1,
+            "name": "Culture",
+            "SEOSlug": ["Culture", "Culture", "Culture", "Culture", "Culture"],
+            "metatitle": "Latest Technology News",
+            "keyword": ["Culture", "Culture"],
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro. Sint ab voluptates itaque, ipsum porro qui obcaecati cumque quas sit vel. Voluptatum provident id quis quo. Eveniet maiores perferendis officia veniam est laborum, expedita fuga doloribus natus repellendus dolorem ab similique sint eius cupiditate necessitatibus, magni nesciunt ex eos. Quis eius aspernatur, eaque culpa cumque reiciendis, nobis at earum assumenda similique ut? Aperiam vel aut, ex exercitationem eos consequuntur eaque culpa totam, deserunt, aspernatur quae eveniet hic provident ullam tempora error repudiandae sapiente illum rerum itaque voluptatem. Commodi, sequi.",
+            "sortOrder": 1,
+            "isActive": true,
+            "isPopular": true
+        },
+        {
+            "id": 2,
+            "name": "Business",
+            "SEOSlug": ["Business", "Businees", "Business"],
+            "metatitle": "Latest Technology News",
+            "keyword": ["Business", "Business"],
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro. Sint ab voluptates itaque, ipsum porro qui obcaecati cumque quas sit vel. Voluptatum provident id quis quo. Eveniet maiores perferendis officia veniam est laborum, expedita fuga doloribus natus repellendus dolorem ab similique sint eius cupiditate necessitatibus, magni nesciunt ex eos. Quis eius aspernatur, eaque culpa cumque reiciendis, nobis at earum assumenda similique ut? Aperiam vel aut, ex exercitationem eos consequuntur eaque culpa totam, deserunt, aspernatur quae eveniet hic provident ullam tempora error repudiandae sapiente illum rerum itaque voluptatem. Commodi, sequi.",
+            "sortOrder": 2,
+            "isActive": true,
+            "isPopular": true
+        },
+        {
+            "id": 3,
+            "name": "Politics",
+            "SEOSlug": ["Politics", "Politics", "Politics", "Politics", "Politics"],
+            "metatitle": "Latest Technology News",
+            "keyword": ["Politics", "Politics"],
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro. Sint ab voluptates itaque, ipsum porro qui obcaecati cumque quas sit vel. Voluptatum provident id quis quo. Eveniet maiores perferendis officia veniam est laborum, expedita fuga doloribus natus repellendus dolorem ab similique sint eius cupiditate necessitatibus, magni nesciunt ex eos. Quis eius aspernatur, eaque culpa cumque reiciendis, nobis at earum assumenda similique ut? Aperiam vel aut, ex exercitationem eos consequuntur eaque culpa totam, deserunt, aspernatur quae eveniet hic provident ullam tempora error repudiandae sapiente illum rerum itaque voluptatem. Commodi, sequi.",
+            "sortOrder": 3,
+            "isActive": true,
+            "isPopular": true
+        },
+        {
+            "id": 4,
+            "name": "Travel",
+            "SEOSlug": ["Travel", "Adventure", "Food", "Travel", "Travel"],
+            "metatitle": "Latest Technology News",
+            "keyword": ["Travel", "Travel"],
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro. Sint ab voluptates itaque, ipsum porro qui obcaecati cumque quas sit vel. Voluptatum provident id quis quo. Eveniet maiores perferendis officia veniam est laborum, expedita fuga doloribus natus repellendus dolorem ab similique sint eius cupiditate necessitatibus, magni nesciunt ex eos. Quis eius aspernatur, eaque culpa cumque reiciendis, nobis at earum assumenda similique ut? Aperiam vel aut, ex exercitationem eos consequuntur eaque culpa totam, deserunt, aspernatur quae eveniet hic provident ullam tempora error repudiandae sapiente illum rerum itaque voluptatem. Commodi, sequi.",
+            "sortOrder": 4,
+            "isActive": true,
+            "isPopular": true
+        }
+    ],
+
+    "posts": [
+        {
+            "id": 1,
+            "category_id": 1,
+            "title": "Don’t assume your user data in the cloud is safe",
+            "DateTime": "2024-06-10T10:00:00Z",
+            "By": "Author1",
             "isActive": true,
             "isFeatured": true,
-            "postSEOSlug": "new-ai-breakthrough",
-            "postymetatitle": "AI Breakthrough",
-            "postkeyword": "AI, technology",
-            "postdescription": "Quibusdam autem, quas molestias recusandae aperiam molestiae modi qui ipsam vel. Placeat tenetur veritatis tempore quos impedit dicta, error autem, quae sint inventore ipsa quidem. Quo voluptate quisquam reiciendis, minus, animi minima eum officia doloremque repellat eos, odio doloribus cum.Temporibus quo dolore veritatis doloribus delectus dolores perspiciatis recusandae ducimus, nisi quod, incidunt ut quaerat, magnam cupiditate. Aut, laboriosam magnam, nobis dolore fugiat impedit necessitatibus nisi cupiditate, quas repellat itaque molestias sit libero voluptas eveniet omnis illo ullam dolorem minima.Porro amet accusantium libero fugit totam, deserunt ipsa, dolorem, vero expedita illo similique saepe nisi deleniti. Cumque, laboriosam, porro! Facilis voluptatem sequi nulla quidem, provident eius quos pariatur maxime sapiente illo nostrum quibusdam aliquid fugiat! Earum quod fuga id officia.Illo magnam at dolore ad enim fugiat ut maxime facilis autem, nulla cumque quis commodi eos nisi unde soluta, ipsa eius aspernatur sint atque! Nihil, eveniet illo ea, mollitia fuga accusamus dolor dolorem perspiciatis rerum hic, consectetur error rem aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus magni explicabo id molestiae, minima quas assumenda consectetur, nobis neque rem, incidunt quam tempore perferendis provident obcaecati sapiente, animi vel expedita omnis quae ipsa! Obcaecati eligendi sed odio labore vero reiciendis facere accusamus molestias eaque impedit, consequuntur quae fuga vitae fugit?"
-          }
-        ]
-      },
-      {
-        "categoryId": 2,
-        "categoryName": "Health",
-        "categorySEOSlug": "health",
-        "categorymetatitle": "Health Tips and News",
-        "categorykeyword": "health, wellness, fitness",
-        "categorydescription": "Your daily dose of health and wellness news.",
-        "sortOrder": 2,
-        "isActive": true,
-        "isPopular": false,
-        "posts": [
-          {
-            "postId": 102,
-            "PostDescription": "10 Tips for a Healthy Lifestyle",
-            "PostDateTime": "2024-06-10T09:00:00Z",
-            "PostBy": "Author2",
-            "isActive": true,
-            "isFeatured": false,
-            "postSEOSlug": "healthy-lifestyle-tips",
-            "postymetatitle": "Healthy Lifestyle",
-            "postkeyword": "health, tips",
-            "postdescription": "Simple tips to improve your health."
-          }
-        ]
-      }
-    ],
-    "recentPostsToday": [
-      {
-        "postId": 101,
-        "categoryId": 1,
-        "PostDescription": "New breakthrough in AI technology.",
-        "PostDateTime": "2024-06-10T10:00:00Z",
-        "PostBy": "Author1",
-        "isActive": true,
-        "isFeatured": true,
-        "postSEOSlug": "new-ai-breakthrough",
-        "postymetatitle": "AI Breakthrough",
-        "postkeyword": "AI, technology",
-        "postdescription": "Details on the new AI breakthrough."
-      },
-      {
-        "postId": 102,
-        "categoryId": 2,
-        "PostDescription": "10 Tips for a Healthy Lifestyle",
-        "PostDateTime": "2024-06-10T09:00:00Z",
-        "PostBy": "Author2",
-        "isActive": true,
-        "isFeatured": false,
-        "postSEOSlug": "healthy-lifestyle-tips",
-        "postymetatitle": "Healthy Lifestyle",
-        "postkeyword": "health, tips",
-        "postdescription": "Simple tips to improve your health."
-      }
-    ],
-    "top10RecentPostsByDate": [
-      {
-        "postId": 101,
-        "categoryId": 1,
-        "PostDescription": "New breakthrough in AI technology.",
-        "PostDateTime": "2024-06-10T10:00:00Z",
-        "PostBy": "Author1",
-        "isActive": true,
-        "isFeatured": true,
-        "postSEOSlug": "new-ai-breakthrough",
-        "postymetatitle": "AI Breakthrough",
-        "postkeyword": "AI, technology",
-        "postdescription": "Details on the new AI breakthrough."
-      },
-      {
-        "postId": 102,
-        "categoryId": 2,
-        "PostDescription": "10 Tips for a Healthy Lifestyle",
-        "PostDateTime": "2024-06-10T09:00:00Z",
-        "PostBy": "Author2",
-        "isActive": true,
-        "isFeatured": false,
-        "postSEOSlug": "healthy-lifestyle-tips",
-        "postymetatitle": "Healthy Lifestyle",
-        "postkeyword": "health, tips",
-        "postdescription": "Simple tips to improve your health."
-      }
+            "SEOSlug": "new-ai-breakthrough",
+            "metatitle": "AI Breakthrough",
+            "keyword": "AI, technology",
+            "description": "Quibusdam autem, quas molestias recusandae aperiam molestiae modi qui ipsam vel. Placeat tenetur veritatis tempore quos impedit dicta, error autem, quae sint inventore ipsa quidem. Quo voluptate quisquam reiciendis, minus, animi minima eum officia doloremque repellat eos, odio doloribus cum.Temporibus quo dolore veritatis doloribus delectus dolores perspiciatis recusandae ducimus, nisi quod, incidunt ut quaerat, magnam cupiditate. Aut, laboriosam magnam, nobis dolore fugiat impedit necessitatibus nisi cupiditate, quas repellat itaque molestias sit libero voluptas eveniet omnis illo ullam dolorem minima.Porro amet accusantium libero fugit totam, deserunt ipsa, dolorem, vero expedita illo similique saepe nisi deleniti. Cumque, laboriosam, porro! Facilis voluptatem sequi nulla quidem, provident eius quos pariatur maxime sapiente illo nostrum quibusdam aliquid fugiat! Earum quod fuga id officia.Illo magnam at dolore ad enim fugiat ut maxime facilis autem, nulla cumque quis commodi eos nisi unde soluta, ipsa eius aspernatur sint atque! Nihil, eveniet illo ea, mollitia fuga accusamus dolor dolorem perspiciatis rerum hic, consectetur error rem aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus magni explicabo id molestiae, minima quas assumenda consectetur, nobis neque rem, incidunt quam tempore perferendis provident obcaecati sapiente, animi vel expedita omnis quae ipsa! Obcaecati eligendi sed odio labore vero reiciendis facere accusamus molestias eaque impedit, consequuntur quae fuga vitae fugit?"
+        }
     ]
   }
