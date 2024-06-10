@@ -44,7 +44,7 @@ export default function Navigation({ jsonData }) {
                                             <Link href="/">Home</Link>
                                         </li>
                                         <li className="has-children">
-                                            <Link href="">Pages</Link>
+                                            <a>Pages</a>
                                             <ul className="dropdown">
                                                 <li>
                                                     <Link href="/search-result">

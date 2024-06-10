@@ -10503,3 +10503,12 @@ textarea {
       .site-footer .social li a:hover {
         background: #fff;
         color: #214252; }
+.pr-1{
+    padding-right: 8px;
+}
+.mb-20{
+    margin-bottom: 100px;
+}
+.pt-0{
+    padding-top: 0;
+}
