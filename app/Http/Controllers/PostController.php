@@ -8,16 +8,16 @@ use Illuminate\Support\Facades\File;
 
 class PostController extends Controller
 {
-    public function storePost(Request $request)
+    public function store(Request $request)
     {
         // Validate the incoming request data
         $validated = $request->validate([
             'category_id' => 'required|integer',
             'title' => 'required|string',
-            'SEOSlug' => 'required|string',
-            'metatitle' =>  'required|string',
-            'keyword' => 'required|string',
-            'description' => 'required|string',
+            // 'SEOSlug' => 'required|string',
+            // 'metatitle' =>  'required|string',
+            // 'keyword' => 'required|string',
+            // 'description' => 'required|string',
         ]);
 
         // Path to your JSON file
@@ -31,13 +31,16 @@ class PostController extends Controller
 
         // Add the new post to the posts array
         $data['posts'][] = [
-            'id' => $validated['id'],
+            'id' => 3,
             'category_id' => $validated['category_id'],
             'title' => $validated['title'],
-            'SEOSlug' => $validated['SEOSlug'],
-            'metatitle' => $validated['metatitle'],
-            'keyword' => $validated['keyword'],
-            'description' => $validated['description'],
+            // "By" => "Author1",
+            // "isActive" => true,
+            // "isFeatured" => true,
+            // 'SEOSlug' => $validated['SEOSlug'],
+            // 'metatitle' => $validated['metatitle'],
+            // 'keyword' => $validated['keyword'],
+            // 'description' => $validated['description'],
         ];
 
         // Encode the updated data back to JSON
