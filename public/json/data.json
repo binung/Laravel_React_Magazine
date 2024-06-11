@@ -3,9 +3,18 @@
         {
             "id": 1,
             "name": "Culture",
-            "SEOSlug": ["Culture", "Culture", "Culture", "Culture", "Culture"],
+            "SEOSlug": [
+                "Culture",
+                "Culture",
+                "Culture",
+                "Culture",
+                "Culture"
+            ],
             "metatitle": "Latest Technology News",
-            "keyword": ["Culture", "Culture"],
+            "keyword": [
+                "Culture",
+                "Culture"
+            ],
             "description": "Eveniet maiores perferendis officia veniam est laborum, expedita fuga doloribus natus repellendus dolorem ab similique sint eius cupiditate necessitatibus, magni nesciunt ex eos. Quis eius aspernatur, eaque culpa cumque reiciendis, nobis at earum assumenda similique ut? Aperiam vel aut, ex exercitationem eos consequuntur eaque culpa totam, deserunt, aspernatur quae eveniet hic provident ullam tempora error repudiandae sapiente illum rerum itaque voluptatem. Commodi, sequi.",
             "sortOrder": 1,
             "isActive": true,
@@ -14,9 +23,16 @@
         {
             "id": 2,
             "name": "Business",
-            "SEOSlug": ["Business", "Businees", "Business"],
+            "SEOSlug": [
+                "Business",
+                "Businees",
+                "Business"
+            ],
             "metatitle": "Latest Technology News",
-            "keyword": ["Business", "Business"],
+            "keyword": [
+                "Business",
+                "Business"
+            ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro. Sint ab voluptates itaque, ipsum porro qui obcaecati cumque quas sit vel. Voluptatum provident id quis quo.",
             "sortOrder": 2,
             "isActive": true,
@@ -25,9 +41,18 @@
         {
             "id": 3,
             "name": "Politics",
-            "SEOSlug": ["Politics", "Politics", "Politics", "Politics", "Politics"],
+            "SEOSlug": [
+                "Politics",
+                "Politics",
+                "Politics",
+                "Politics",
+                "Politics"
+            ],
             "metatitle": "Latest Technology News",
-            "keyword": ["Politics", "Politics"],
+            "keyword": [
+                "Politics",
+                "Politics"
+            ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro. Sint ab voluptates itaque, ipsum porro qui obcaecati cumque quas sit vel. Voluptatum provident id quis quo. Eveniet maiores perferendis officia veniam est laborum, expedita fuga doloribus natus repellendus dolorem ab similique sint eius cupiditate necessitatibus, magni nesciunt ex eos. Quis eius aspernatur, eaque culpa cumque reiciendis, nobis at earum assumenda similique ut? Aperiam vel aut, ex exercitationem eos consequuntur eaque culpa totam, deserunt, aspernatur quae eveniet hic provident ullam tempora error repudiandae sapiente illum rerum itaque voluptatem. Commodi, sequi.",
             "sortOrder": 3,
             "isActive": true,
@@ -36,28 +61,47 @@
         {
             "id": 4,
             "name": "Travel",
-            "SEOSlug": ["Travel", "Adventure", "Food", "Travel", "Travel"],
+            "SEOSlug": [
+                "Travel",
+                "Adventure",
+                "Food",
+                "Travel",
+                "Travel"
+            ],
             "metatitle": "Latest Technology News",
-            "keyword": ["Travel", "Travel"],
+            "keyword": [
+                "Travel",
+                "Travel"
+            ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro. Sint ab voluptates itaque, ipsum porro qui obcaecati cumque quas sit vel. Voluptatum provident id quis quo. Eveniet maiores perferendis officia veniam est laborum, expedita fuga doloribus natus repellendus dolorem ab similique sint eius cupiditate necessitatibus, magni nesciunt ex eos. Quis eius aspernatur, eaque culpa cumque reiciendis, nobis at earum assumenda similique ut? Aperiam vel aut, ex exercitationem eos consequuntur eaque culpa totam, deserunt, aspernatur quae eveniet hic provident ullam tempora error repudiandae sapiente illum rerum itaque voluptatem. Commodi, sequi.",
             "sortOrder": 4,
             "isActive": true,
             "isPopular": true
+        },
+        {
+            "id": 4,
+            "description": "ewrwerwer",
+            "title": "ewrw"
         }
     ],
-
     "posts": [
         {
             "id": 1,
             "category_id": 1,
-            "title": "Don’t assume your user data in the cloud is safe",
+            "title": "Don\u2019t assume your user data in the cloud is safe",
             "DateTime": "2024-06-10T10:00:00Z",
             "By": "Author1",
             "isActive": true,
             "isFeatured": true,
-            "SEOSlug": ["new-ai-breakthrough", "new-ai-breakthrough"],
+            "SEOSlug": [
+                "new-ai-breakthrough",
+                "new-ai-breakthrough"
+            ],
             "metatitle": "AI Breakthrough",
-            "keyword": ["AI", "technology"],
+            "keyword": [
+                "AI",
+                "technology"
+            ],
             "description": "This is the post1"
         },
         {
@@ -68,10 +112,16 @@
             "By": "Author1",
             "isActive": true,
             "isFeatured": true,
-            "SEOSlug": ["new-ai-breakthrough", "new-ai-breakthrough"],
+            "SEOSlug": [
+                "new-ai-breakthrough",
+                "new-ai-breakthrough"
+            ],
             "metatitle": "AI Breakthrough",
-            "keyword": ["AI", "technology"],
+            "keyword": [
+                "AI",
+                "technology"
+            ],
             "description": "This is the post2"
         }
     ]
-  }
+}

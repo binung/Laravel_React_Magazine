@@ -15,10 +15,10 @@ class AdminMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (auth()->check() && auth()->user()->admin) {
+        if (auth()->check() && auth()->user()->admin == 1) {
             return $next($request);
         }
 
-        return $next($request);
+        return route('welcome');
     }
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\File;
 
 class CategoryController extends Controller
 {
@@ -28,7 +29,37 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        dump('ddddd');
+
+        // Validate the incoming request data
+        $validated = $request->validate([
+            'description' => 'required|string',
+            'title' => 'required|string',
+        ]);
+
+        // Path to your JSON file
+        $path = public_path('json/data.json');
+
+        // Read the file contents
+        $json = File::get($path);
+
+        // Decode the JSON data into an array
+        $data = json_decode($json, true);
+
+        // Add the new post to the posts array
+        $data['categories'][] = [
+            'id' => 4,
+            'description' => $validated['description'],
+            'title' => $validated['title'],
+        ];
+
+        // Encode the updated data back to JSON
+        $newJsonData = json_encode($data, JSON_PRETTY_PRINT);
+
+        // Write the new JSON data back to the file
+        File::put($path, $newJsonData);
+
+        // Return a response
+        return redirect()->back();
     }
 
     /**
