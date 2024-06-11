@@ -4,7 +4,7 @@ import React from "react";
 export default function Sidebar() {
     return (
         <aside
-            className="sidenav bg-default navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
+            className="sidenav bg-default navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl fixed-start m-0 rounded-none"
             id="sidenav-main"
         >
             <div className="sidenav-header">
@@ -20,7 +20,7 @@ export default function Sidebar() {
                         alt="main_logo"
                     /> */}
                     <span className="ms-1 font-weight-bold">
-                        Let's Create New WORLD!
+                        Blogy Admin Page
                     </span>
                 </Link>
             </div>
@@ -53,10 +53,23 @@ export default function Sidebar() {
                             className={`${
                                 route().current("post.*") && "active"
                             } nav-link`}
+                            href="/category"
+                        >
+                            <div className="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                <i className="ni ni-ambulance text-warning text-sm opacity-10" />
+                            </div>
+                            <span className="nav-link-text ms-1">Category</span>
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link
+                            className={`${
+                                route().current("post.*") && "active"
+                            } nav-link`}
                             href={route("profile.edit")}
                         >
                             <div className="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                                <i className="ni ni-single-02 text-warning text-sm opacity-10" />
+                                <i className="ni ni-image text-warning text-sm opacity-10" />
                             </div>
                             <span className="nav-link-text ms-1">Posts</span>
                         </Link>

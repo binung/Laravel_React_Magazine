@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PostController;
@@ -41,12 +42,20 @@ Route::get('/contact', function () {
 })->name('contact');
 
 
+Route::get('/posts/category/{category_id}', [PostController::class, 'getPostsByCategory'])->name('cagegory.show');
+Route::get('/posts/detail/{id}', [PostController::class, 'getPostsById'])->name('post.show');
+
 Route::middleware('admin')->group(function () {
-    Route::get('/posts/category/{category_id}', [PostController::class, 'getPostsByCategory'])->name('category.show');
-    Route::get('/posts/detail/{id}', [PostController::class, 'getPostsById'])->name('post.show');
     Route::post('/posts', [PostController::class, 'store'])->name('post.store');
     Route::patch('/posts/{post_id}', [PostController::class, 'update'])->name('post.update');
     Route::delete('/posts/{post_id}', [PostController::class, 'destroy'])->name('post.destroy');
+
+    Route::get('/user', [UserController::class, 'edit'])->name('users.show');
+    Route::get('/user/{user_id}', [UserController::class, 'edit'])->name('users.edit');
+    Route::patch('/user/{user_id}', [UserController::class, 'update'])->name('users.update');
+    Route::delete('/user/{user_id}', [UserController::class, 'destroy'])->name('users.destroy');
+
+    Route::resource('category', CategoryController::class);
 });
 
 
@@ -61,12 +70,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::middleware('auth')->group(function () {
-    Route::get('/user', [UserController::class, 'edit'])->name('users.show');
-    Route::get('/user/{user_id}', [UserController::class, 'edit'])->name('users.edit');
-    Route::patch('/user/{user_id}', [UserController::class, 'update'])->name('users.update');
-    Route::delete('/user/{user_id}', [UserController::class, 'destroy'])->name('users.destroy');
-});
 
 
 require __DIR__ . '/auth.php';

@@ -125,7 +125,7 @@ export default function Navigation() {
                                                           <li key={item.id}>
                                                               <Link
                                                                   href={route(
-                                                                      "category.show",
+                                                                      "cagegory.show",
                                                                       {
                                                                           category_id:
                                                                               item.id,

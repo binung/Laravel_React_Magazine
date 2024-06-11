@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ab06941693e71ac066ac9cd592fd824",
+    "content-hash": "defaf809d074265bac1b13dd82fcf4c9",
     "packages": [
         {
             "name": "brick/math",
@@ -5669,6 +5669,72 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.2.7"
             },
             "time": "2023-12-08T13:03:43+00:00"
+        },
+        {
+            "name": "toanld/ziggy",
+            "version": "1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/toanld/ziggy.git",
+                "reference": "599bb3964a640627b2708553bad27b77d4c435f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/toanld/ziggy/zipball/599bb3964a640627b2708553bad27b77d4c435f7",
+                "reference": "599bb3964a640627b2708553bad27b77d4c435f7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "laravel/framework": ">=5.4@dev"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.0 || ^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0",
+                "phpunit/phpunit": "^6.0 || ^7.0 || ^8.0 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tightenco\\Ziggy\\ZiggyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tightenco\\Ziggy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Coulbourne",
+                    "email": "daniel@tighten.co"
+                },
+                {
+                    "name": "Jake Bathman",
+                    "email": "jake@tighten.co"
+                },
+                {
+                    "name": "Jacob Baker-Kretzmar",
+                    "email": "jacob@tighten.co"
+                }
+            ],
+            "description": "Generates a Blade directive exporting all of your named Laravel routes. Also provides a nice route() helper function in JavaScript.",
+            "homepage": "https://github.com/tighten/ziggy",
+            "keywords": [
+                "Ziggy",
+                "javascript",
+                "laravel",
+                "routes"
+            ],
+            "support": {
+                "source": "https://github.com/toanld/ziggy/tree/1.8"
+            },
+            "time": "2023-08-20T08:52:55+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
