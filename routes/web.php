@@ -45,7 +45,7 @@ Route::get('/contact', function () {
 Route::get('/posts/category/{category_id}', [PostController::class, 'getPostsByCategory'])->name('cagegory.show');
 Route::get('/posts/detail/{id}', [PostController::class, 'getPostsById'])->name('post.show');
 
-Route::middleware('admin')->group(function () {
+Route::middleware(['auth', 'admin'])->group(function () {
     Route::post('/posts', [PostController::class, 'store'])->name('post.store');
     Route::patch('/posts/{post_id}', [PostController::class, 'update'])->name('post.update');
     Route::delete('/posts/{post_id}', [PostController::class, 'destroy'])->name('post.destroy');

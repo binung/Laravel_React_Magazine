@@ -59,7 +59,7 @@ class CategoryController extends Controller
         File::put($path, $newJsonData);
 
         // Return a response
-        return redirect()->back();
+        return redirect(route('category.show'));
     }
 
     /**

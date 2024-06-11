@@ -19,9 +19,9 @@ export default function Sidebar() {
                         className="navbar-brand-img h-100"
                         alt="main_logo"
                     /> */}
-                    <span className="ms-1 font-weight-bold">
+                    <Link href="/" className="ms-1 font-weight-bold">
                         Blogy Admin Page
-                    </span>
+                    </Link>
                 </Link>
             </div>
             <hr className="horizontal dark mt-0" />
@@ -90,7 +90,6 @@ export default function Sidebar() {
                     <li className="nav-item">
                         <Link
                             className="nav-link "
-                            as="a"
                             method="post"
                             href={route("logout")}
                         >
