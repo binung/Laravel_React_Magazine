@@ -50,6 +50,7 @@ class CategoryController extends Controller
             'id' => 4,
             'description' => $validated['description'],
             'title' => $validated['title'],
+            'DateTime' => now()
         ];
 
         // Encode the updated data back to JSON
@@ -59,7 +60,7 @@ class CategoryController extends Controller
         File::put($path, $newJsonData);
 
         // Return a response
-        return redirect(route('category.show'));
+        return redirect(route('category.index'));
     }
 
     /**

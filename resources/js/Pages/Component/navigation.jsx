@@ -66,7 +66,7 @@ export default function Navigation() {
                                             <Link href="/">Home</Link>
                                         </li>
                                         <li className="has-children">
-                                            <a>Pages</a>
+                                            <Link>Pages</Link>
                                             <ul className="dropdown">
                                                 <li>
                                                     <Link href="/search-result">

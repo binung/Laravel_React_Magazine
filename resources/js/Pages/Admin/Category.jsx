@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { useForm } from "@inertiajs/react";
+import { useForm, usePage } from "@inertiajs/react";
 
 import Base from "@/Layouts/Base";
 import DangerButton from "@/Components/DangerButton";
@@ -10,6 +10,8 @@ import SecondaryButton from "@/Components/SecondaryButton";
 import TextInput from "@/Components/TextInput";
 
 export default function Category() {
+    // const { categories } = usePage().props;
+
     const [show, setShow] = useState(false);
     const title = useRef();
 
