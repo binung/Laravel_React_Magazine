@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/binung" target="_blank"><img src="./images/avatar.png" width="400" alt="avatar"></a></p>
+<p align="center"><a href="https://github.com/binung" target="_blank"><img src="./public/images/avatar.png" width="400" alt="avatar"></a></p>
 
 <!-- <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
