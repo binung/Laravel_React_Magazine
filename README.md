@@ -67,14 +67,14 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Install
 
-'''
+```
 composer install
-php artisan key:generate
 npm install
-'''
+```
 
 make .env to copy the .env.example
-'''
+
+```
 php artisan key:generate
 
 DB_CONNECTION=mysql
@@ -87,4 +87,4 @@ DB_PASSWORD=
 GOOGLE_CLIENT_ID=your-google-client-id
 GOOGLE_CLIENT_SECRET=your-google-client-secret
 GOOGLE_REDIRECT_URI=http://your-app-url/login/google/callback
-'''
+```
