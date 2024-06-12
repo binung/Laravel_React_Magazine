@@ -17,7 +17,7 @@ class AdminMiddleware
     public function handle(Request $request, Closure $next): Response
     {
         $user = Auth::user();
-        if ($user && !$user->admin) {
+        if ($user && !$user->is_admin) {
             Auth::logout();
             return redirect('/login')->withErrors([
                 'You do not have admin access.'
