@@ -2,10 +2,10 @@ import { Link } from "@inertiajs/react";
 import Navigation from "./Component/navigation";
 import Footer from "./Component/footer";
 
-export default function Welcome() {
+export default function Welcome({ auth }) {
     return (
         <>
-            <Navigation />
+            <Navigation auth={auth} />
             <section className="section bg-light">
                 <div className="container">
                     <div className="row align-items-stretch retro-layout">

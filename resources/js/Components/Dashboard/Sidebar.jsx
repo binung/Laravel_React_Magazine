@@ -14,14 +14,7 @@ export default function Sidebar() {
                     id="iconSidenav"
                 />
                 <Link className="navbar-brand m-0" href="/" target="_blank">
-                    {/* <img
-                        src="/img/logo-ct.png"
-                        className="navbar-brand-img h-100"
-                        alt="main_logo"
-                    /> */}
-                    <Link href="/" className="ms-1 font-weight-bold">
-                        Blogy Admin Page
-                    </Link>
+                    Blogy Admin Page
                 </Link>
             </div>
             <hr className="horizontal dark mt-0" />
@@ -88,11 +81,7 @@ export default function Sidebar() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link
-                            className="nav-link "
-                            method="post"
-                            href={route("logout")}
-                        >
+                        <Link className="nav-link " href={route("logout")}>
                             <div className="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                                 <i className="fas fa-sign-out-alt text-danger text-sm opacity-10"></i>
                             </div>

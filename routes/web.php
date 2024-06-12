@@ -4,26 +4,16 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PostController;
-use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
+        'canRegister' => Route::has('register')
     ]);
 })->name('welcome');
 
-// Route::get('/category', function () {
-//     return Inertia::render('Category/category');
-// })->name('category');
-
-// Route::get('/detail', function () {
-//     return Inertia::render('Detail/detail');
-// })->name('detail');
 
 Route::get('/search-result', function () {
     return Inertia::render('Page/SearchResult');

@@ -2,98 +2,38 @@
     "categories": [
         {
             "id": 1,
-            "name": "Culture",
-            "SEOSlug": [
-                "Culture",
-                "Culture",
-                "Culture",
-                "Culture",
-                "Culture"
-            ],
-            "metatitle": "Latest Technology News",
-            "keyword": [
-                "Culture",
-                "Culture"
-            ],
-            "description": "Eveniet maiores perferendis officia veniam est laborum, expedita fuga doloribus natus repellendus dolorem ab similique sint eius cupiditate necessitatibus, magni nesciunt ex eos. Quis eius aspernatur, eaque culpa cumque reiciendis, nobis at earum assumenda similique ut? Aperiam vel aut, ex exercitationem eos consequuntur eaque culpa totam, deserunt, aspernatur quae eveniet hic provident ullam tempora error repudiandae sapiente illum rerum itaque voluptatem. Commodi, sequi.",
+            "name": "Laravel",
+            "description": "Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.",
             "sortOrder": 1,
-            "isActive": true,
-            "isPopular": true
+            "isActive": true
         },
         {
             "id": 2,
-            "name": "Business",
-            "SEOSlug": [
-                "Business",
-                "Businees",
-                "Business"
-            ],
-            "metatitle": "Latest Technology News",
-            "keyword": [
-                "Business",
-                "Business"
-            ],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro. Sint ab voluptates itaque, ipsum porro qui obcaecati cumque quas sit vel. Voluptatum provident id quis quo.",
+            "name": "React",
+            "description": "Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.",
             "sortOrder": 2,
-            "isActive": true,
-            "isPopular": true
+            "isActive": true
         },
         {
             "id": 3,
-            "name": "Politics",
-            "SEOSlug": [
-                "Politics",
-                "Politics",
-                "Politics",
-                "Politics",
-                "Politics"
-            ],
-            "metatitle": "Latest Technology News",
-            "keyword": [
-                "Politics",
-                "Politics"
-            ],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro. Sint ab voluptates itaque, ipsum porro qui obcaecati cumque quas sit vel. Voluptatum provident id quis quo. Eveniet maiores perferendis officia veniam est laborum, expedita fuga doloribus natus repellendus dolorem ab similique sint eius cupiditate necessitatibus, magni nesciunt ex eos. Quis eius aspernatur, eaque culpa cumque reiciendis, nobis at earum assumenda similique ut? Aperiam vel aut, ex exercitationem eos consequuntur eaque culpa totam, deserunt, aspernatur quae eveniet hic provident ullam tempora error repudiandae sapiente illum rerum itaque voluptatem. Commodi, sequi.",
+            "name": "Vue",
+            "description": "Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.",
             "sortOrder": 3,
-            "isActive": true,
-            "isPopular": true
+            "isActive": true
         },
         {
             "id": 4,
-            "name": "Travel",
-            "SEOSlug": [
-                "Travel",
-                "Adventure",
-                "Food",
-                "Travel",
-                "Travel"
-            ],
-            "metatitle": "Latest Technology News",
-            "keyword": [
-                "Travel",
-                "Travel"
-            ],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro. Sint ab voluptates itaque, ipsum porro qui obcaecati cumque quas sit vel. Voluptatum provident id quis quo. Eveniet maiores perferendis officia veniam est laborum, expedita fuga doloribus natus repellendus dolorem ab similique sint eius cupiditate necessitatibus, magni nesciunt ex eos. Quis eius aspernatur, eaque culpa cumque reiciendis, nobis at earum assumenda similique ut? Aperiam vel aut, ex exercitationem eos consequuntur eaque culpa totam, deserunt, aspernatur quae eveniet hic provident ullam tempora error repudiandae sapiente illum rerum itaque voluptatem. Commodi, sequi.",
-            "sortOrder": 4,
-            "isActive": true,
-            "isPopular": true
+            "name": "Node.js",
+            "description": "Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.",
+            "sortOrder": 3,
+            "isActive": true
         },
         {
-            "id": 4,
-            "description": "ewrwerwer",
-            "title": "ewrw"
-        },
-        {
-            "id": 4,
-            "description": "sadsadsad",
-            "title": "asdasd",
-            "DateTime": "2024-06-12T01:37:32.200696Z"
-        },
-        {
-            "id": 4,
-            "description": "sadasdasd",
-            "title": "zdada",
-            "DateTime": "2024-06-12T01:38:19.315902Z"
+            "id": 5,
+            "name": "Express.js",
+            "description": "Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.",
+            "sortOrder": 3,
+            "isActive": true
         }
     ],
     "posts": [

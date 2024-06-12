@@ -109,7 +109,7 @@ export default function Footer() {
                                                     className="me-4 rounded"
                                                 />
                                                 <div className="text pl-5">
-                                                    <h4>
+                                                    <h4 className="text-white">
                                                         There’s Link Cool New
                                                         Way for Men href Wear
                                                         Socks and Sandals
@@ -130,7 +130,7 @@ export default function Footer() {
                                                     className="me-4 rounded"
                                                 />
                                                 <div className="text pl-5">
-                                                    <h4>
+                                                    <h4 className="text-white">
                                                         There’s Link Cool New
                                                         Way for Men href Wear
                                                         Socks and Sandals
@@ -151,7 +151,7 @@ export default function Footer() {
                                                     className="me-4 rounded"
                                                 />
                                                 <div className="text pl-5">
-                                                    <h4>
+                                                    <h4 className="text-white">
                                                         There’s Link Cool New
                                                         Way for Men href Wear
                                                         Socks and Sandals
